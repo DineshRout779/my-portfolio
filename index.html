@@ -35,29 +35,31 @@
     <section class="container hero">
         <h1 class="bg-text">Hello</h1>
         <p class="md-text">I am Dinesh Rout</p>
-        <p>A Frontend Web Developer</p>
+        <p>A Front-End Developer</p>
+        <a href="#about" class="down-btn"><i class="fa fa-angle-down" aria-hidden="true"></i>
+        </a>
     </section>
     <section id="about" class="container about">
         <h1 class="heading">About</h1>
         <div class="about__image">
-            <img src="./images/Photo_from_Dinesh_Rout-removebg-preview.png" alt="avatar">
+            <img src="./images/me.png" alt="avatar">
         </div>
         <div class="about__content">
-            <h3>I'm Dinesh Rout, A full stack web developer.</h3>
-            <p>My tech stack inckudes the following technologies:-</p>
+            <p>My name is Dinesh Rout, I'm a Front End Developer. I describe myself as a
+                passionate developer who loves coding and the web platform ❤️. I'm currently pursing Bacholar's Degree
+                in
+                Computer Science. </p>
+            <p>I love working with these technolgies:</p>
             <div class="card__tech">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JAVASCRIPT</p>
-                <p>NodeJS</p>
-                <p>Express</p>
-                <p>Handlebars</p>
-                <p>Mysql</p>
+                <p class="html">HTML</p>
+                <p class="css">CSS</p>
+                <p class="javascript">Javascript</p>
+                <p class="react">React</p>
             </div>
         </div>
     </section>
     <section id="projects" class="container projects">
-        <h1 class="heading">projects</h1>
+        <h1 class="heading">Projects</h1>
         <a href="https://agile-eyrie-30726.herokuapp.com/" class="card" target="_blank">
             <div class="card__img">
                 <img src="./images/BlogApp.png" alt="Blog website">
@@ -70,33 +72,25 @@
                 </div>
                 <div class="card__title">
                     <h3>Blog Website</h3>
-                    <div class="option">
-                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                    </div>
                 </div>
                 <div class="card__desc">
                     <p>A Blog Website ( Full stack )</p>
                 </div>
             </div>
         </a>
-        <a href="https://dineshrout779.github.io/Javascript-Projects/" class="card" target="_blank">
+        <a href="https://react-weather-app-fawn.vercel.app/" class="card" target="_blank">
             <div class="card__img">
-                <img src="./images/jsprojects.png" alt="">
+                <img src="./images/weather-app.png" alt="">
             </div>
             <div class="card__content">
                 <div class="card__tech">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>JAVASCRIPT</p>
+                    <p class="react">ReactJs</p>
                 </div>
                 <div class="card__title">
-                    <h3>Small Javascript Projects</h3>
-                    <div class="option">
-                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                    </div>
+                    <h3>Weather App</h3>
                 </div>
                 <div class="card__desc">
-                    <p>A bunch of mini Javascript projects.</p>
+                    <p>A weather app built in ReactJs using openweathermapAPI </p>
                 </div>
             </div>
         </a>
@@ -112,9 +106,6 @@
                 </div>
                 <div class="card__title">
                     <h3>Food Website</h3>
-                    <div class="option">
-                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                    </div>
                 </div>
                 <div class="card__desc">
                     <p>A Food Website</p>
@@ -122,20 +113,21 @@
             </div>
         </a>
     </section>
-    <section class="contact container" id="contact">
-        <h3 class="heading">Get in touch!</h3>
-        <form>
-            <div class="form-control">
-                <input type="text" name="name" id="name" placeholder="Name">
+    <section class="contact" id="contact">
+        <div class="container">
+            <h3 class="heading">Say Hello </h3>
+            <div class="social__list">
+                <a href="" class="social__link">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="" class="social__link">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="" class="social__link">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
             </div>
-            <div class="form-control">
-                <input type="email" name="email" id="email" placeholder="E-mail">
-            </div>
-            <div class="form-control">
-                <textarea name="message" placeholder="Message"></textarea>
-            </div>
-            <input type="submit" value="Submit" class="submit">
-        </form>
+        </div>
     </section>
     <script src="script.js"></script>
 </body>

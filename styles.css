@@ -72,6 +72,21 @@ header {
   border-radius: 50%;
   border: 3px solid rgb(255, 255, 255);
   margin-right: 0.5em;
+  animation: pulse-white 2s infinite;
+}
+
+@keyframes pulse-white {
+  0% {
+    box-shadow: 0 0 0 0 rgb(255, 255, 255, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(250, 250, 250, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
 }
 
 .logo p {
@@ -90,6 +105,22 @@ nav {
   font-weight: bold;
   text-transform: uppercase;
   margin-left: 2em;
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  background-color: #fff;
+  height: 3px;
+  transition: width 0.4s ease-in;
+}
+
+.link:hover::after {
+  width: 100%;
 }
 
 .menu {
@@ -128,6 +159,35 @@ nav {
   left: 0;
   color: var(--primary-color);
   clip-path: polygon(0% 100%, 100% 100%, 100% 0%);
+}
+
+.down-btn {
+  margin-top: 2em;
+  font-size: 2em;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  color: #fff;
+  animation: pulse-black 2s infinite;
+}
+
+@keyframes pulse-black {
+  0% {
+    box-shadow: 0 0 0 0 rgb(245, 97, 97, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
 }
 
 section:not(.hero) {
@@ -182,11 +242,10 @@ section:not(.hero) {
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 0 20px rgb(235, 230, 230);
-  transition: 0.5s ease;
 }
 
 .card:hover {
-  transform: translateY(5px);
+  box-shadow: 0 0 30px rgb(211, 196, 196);
 }
 
 .card__content {
@@ -204,12 +263,30 @@ section:not(.hero) {
 .card__tech p {
   font-size: 10px;
   background-color: var(--primary-color);
-  color: rgb(236, 231, 231);
+  color: rgb(255, 255, 255);
   padding: 3px 6px;
 }
 
+.about__content .card__tech p {
+  font-size: 12px;
+  padding: 0.4em 0.8em;
+}
+p.html {
+  background-color: rgb(250, 91, 112);
+}
+p.css {
+  background-color: rgb(28, 93, 235);
+}
+p.javascript {
+  background-color: rgb(197, 252, 110);
+}
+
+p.react {
+  background-color: rgb(57, 119, 253);
+}
+
 .card__title {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -229,57 +306,32 @@ section:not(.hero) {
 }
 
 .contact {
+  margin-top: 5em;
   padding: 8em 0;
+  background-color: var(--primary-color);
 }
 
 .contact h3 {
+  color: #fff;
   text-align: center;
 }
 
-form {
-  padding: 2em 0 0 0;
-  width: 100%;
+.social__list {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.form-control {
-  width: 90%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-.form-control input,
-.form-control textarea {
-  width: 100%;
-  display: block;
+.social__link {
+  padding: 0.7em 1em;
+  background-color: #fff;
+  margin: 1em;
+  color: var(--primary-color);
+  border-radius: 50%;
 }
 
-textarea {
-  /* resize: none; */
-  height: 120px;
-}
-input,
-textarea {
-  padding: 0.8em;
-  margin: 5px 0;
-}
-
-.submit {
-  margin-top: 1em;
-  background: var(--primary-color);
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: opacity 0.4s ease;
-}
-
-.submit:hover {
-  opacity: 0.9;
+.social__link:hover {
+  animation: pulse-white 2s infinite;
 }
 
 .bg-text {
@@ -335,6 +387,7 @@ textarea {
 
   .about__content {
     padding: 0;
+    text-align: center;
   }
 
   .heading {
@@ -345,6 +398,11 @@ textarea {
 
   .about .heading {
     grid-column: 1/1;
+  }
+
+  .about__content .card__tech {
+    padding: 1em 0;
+    justify-content: center;
   }
 }
 
