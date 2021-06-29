@@ -98,10 +98,11 @@ header {
 
 .nav_link:hover {
   opacity: 0.8;
+  background-color: #fff;
 }
 
 .intro {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,20 +114,6 @@ header {
   padding: 9em 0;
 }
 
-.row {
-  display: flex;
-  justify-content: space-between;
-  gap: 3em;
-}
-
-.col_text {
-  width: 70%;
-}
-
-.col_img {
-  width: 30%;
-}
-
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -135,8 +122,8 @@ ul {
 }
 
 li {
-  font-size: 13px;
-  padding: 0.5em 1em;
+  font-size: 12px;
+  padding: 0.3em 0.5em;
   margin: 0.5em 0.5em 0.5em 0;
   background-color: rgb(231, 88, 88);
   color: #fff;
@@ -145,7 +132,7 @@ li {
 .about,
 .card_container {
   background-color: rgba(255, 255, 255, 0.466);
-  padding: 3em;
+  padding: 1em;
   border-radius: 8px;
 }
 
@@ -158,11 +145,11 @@ li {
 
 .bg-text {
   margin: 0.2em 0;
-  font-size: 7em;
+  font-size: 3em;
 }
 
 .slogan {
-  font-size: 1.8em;
+  font-size: 1.2em;
 }
 
 .text_center {
