@@ -7,126 +7,80 @@
     <title>Dinesh Rout</title>
     <script src="https://kit.fontawesome.com/357dd17236.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
         <div class="container header">
-            <a href="#" class="logo">
-                <div class="circle"></div>
-                <p>DR</p>
-            </a>
-            <nav class="nav">
-                <a href="#about" class="link">about</a>
-                <a href="#projects" class="link">projects</a>
-                <a href="#contact" class="link">contact</a>
-            </nav>
-            <div class="menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+            <div class="header_top">
+                <div class="logo">
+                    <div class="angle angle_right"></div>
+                    <h3>DINESH</h3>
+                    <div class="slash"></div>
+                    <div class="angle angle_left"></div>
+                </div>
+                <div class="menu" id="menu">
+                    <div class="menu_bar"></div>
+                    <div class="menu_bar"></div>
+                    <div class="menu_bar"></div>
+                </div>
             </div>
+            <nav class="nav">
+                <a href="#hero" class="nav_link">Home</a>
+                <a href="#about" class="nav_link">About</a>
+                <a href="#" class="nav_link">Projects</a>
+                <a href="#" class="nav_link">Blogs</a>
+                <a href="#" class="nav_link">Contact</a>
+            </nav>
         </div>
     </header>
-    <section class="container hero">
-        <h1 class="bg-text">Hello</h1>
-        <p class="md-text">I am Dinesh Rout</p>
-        <p>A Front-End Developer</p>
-        <a href="#about" class="down-btn"><i class="fa fa-angle-down" aria-hidden="true"></i>
-        </a>
-    </section>
-    <section id="about" class="container about">
-        <h1 class="heading">About</h1>
-        <div class="about__image">
-            <img src="./images/me.png" alt="avatar">
-        </div>
-        <div class="about__content">
-            <p>My name is Dinesh Rout, I'm a Front End Developer. I describe myself as a
-                passionate developer who loves coding and the web platform ❤️. I'm currently pursing Bacholar's Degree
-                in
-                Computer Science. </p>
-            <p>I love working with these technolgies:</p>
-            <div class="card__tech">
-                <p class="html">HTML</p>
-                <p class="css">CSS</p>
-                <p class="javascript">Javascript</p>
-                <p class="react">React</p>
-            </div>
+    <section class="hero" id="hero">
+        <div class="container intro text_center">
+            <p class="slogan">Hi There, I'm</p>
+            <h1 class="bg-text">Dinesh Rout</h1>
+            <p class="slogan">A Full-Stack Web Developer</p>
         </div>
     </section>
-    <section id="projects" class="container projects">
-        <h1 class="heading">Projects</h1>
-        <a href="https://agile-eyrie-30726.herokuapp.com/" class="card" target="_blank">
-            <div class="card__img">
-                <img src="./images/BlogApp.png" alt="Blog website">
+    <section class="section about_container" id="about">
+        <div class="container row about">
+            <div class="col col_text">
+                <h1>About Me</h1>
+                <p>
+                    I'm, Dinesh Rout, a Web Developer proficient in building frontend websites using HTML, CSS and
+                    JavaScript. I'm
+                    currently persuing Bachaolar Degree of Computer Science. I love the coding environment and learning
+                    web development since a year. I also like to design css arts in my free time.
+                </p>
+                <p>My Tech Stack includes the following technologies,</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>JQuery</li>
+                    <li>ReactJS</li>
+                    <li>NodeJS</li>
+                    <li>ExpressJS</li>
+                    <li>MySQL</li>
+                </ul>
+                <p>Tools I use everyday,</p>
+                <ul>
+                    <li>VSCode</li>
+                    <li>Github</li>
+                    <li>Netlify</li>
+                    <li>Heroku</li>
+                </ul>
             </div>
-            <div class="card__content">
-                <div class="card__tech">
-                    <p>NodeJS</p>
-                    <p>Express</p>
-                    <p>Handlebars</p>
-                </div>
-                <div class="card__title">
-                    <h3>Blog Website</h3>
-                </div>
-                <div class="card__desc">
-                    <p>A Blog Website ( Full stack )</p>
-                </div>
-            </div>
-        </a>
-        <a href="https://react-weather-app-fawn.vercel.app/" class="card" target="_blank">
-            <div class="card__img">
-                <img src="./images/weather-app.png" alt="">
-            </div>
-            <div class="card__content">
-                <div class="card__tech">
-                    <p class="react">ReactJs</p>
-                </div>
-                <div class="card__title">
-                    <h3>Weather App</h3>
-                </div>
-                <div class="card__desc">
-                    <p>A weather app built in ReactJs using openweathermapAPI </p>
-                </div>
-            </div>
-        </a>
-        <a href="https://dinesh-food.netlify.app/" class="card" target="_blank">
-            <div class="card__img">
-                <img src="./images/food.png" alt="food website">
-            </div>
-            <div class="card__content">
-                <div class="card__tech">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>JAVASCRIPT</p>
-                </div>
-                <div class="card__title">
-                    <h3>Food Website</h3>
-                </div>
-                <div class="card__desc">
-                    <p>A Food Website</p>
-                </div>
-            </div>
-        </a>
-    </section>
-    <section class="contact" id="contact">
-        <div class="container">
-            <h3 class="heading">Say Hello 👋</h3>
-            <div class="social__list">
-                <a href="https://github.com/DineshRout779" class="social__link" target="_blank">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/dinesh-rout-a36306179" class="social__link" target="_blank">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="https://twitter.com/DineshRout779" target="_blank" class="social__link">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
+            <div class="col col_img">
+                <img src="./images/Dinesh.jpeg" alt="Dinesh Rout">
             </div>
         </div>
+    </section>
+    <section class="section projects_container">
+
     </section>
     <script src="script.js"></script>
 </body>
