@@ -139,7 +139,7 @@ header {
 }
 
 .section {
-  padding: 9em 0;
+  padding: 7em 0 4em 0;
 }
 
 .section h1 {
@@ -170,7 +170,8 @@ li {
 
 .about,
 .projects,
-.blogs {
+.blogs,
+.contact {
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(20px);
   padding: 1em;
@@ -259,6 +260,54 @@ li {
   background-color: var(--primary-light-blue);
 }
 
+.contact .col {
+  margin: 1em 0;
+}
+
+.form {
+  width: 100%;
+}
+
+.form_control:not(.cta) {
+  width: 100%;
+  display: block;
+  padding: 0.6em;
+  font-size: 1em;
+  margin: 0.5em 0;
+  border: 2px solid var(--white);
+  outline: none;
+  border-radius: 4px;
+}
+
+.form_control:focus:not(.cta) {
+  border: 2px solid var(--hover-blue);
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+.form .cta {
+  margin: 1em 0;
+  width: 100%;
+  padding: 0.6em;
+}
+
+.col_social {
+  padding: 3em 2em;
+}
+
+.social_icons {
+  font-size: 2em;
+  color: var(--light-black);
+  margin: 0 0.3em;
+}
+
+.social_icons:hover {
+  color: var(--hover-blue);
+}
+
 .bg-text {
   margin: 0.2em 0;
   font-size: 3em;
@@ -270,6 +319,10 @@ li {
 
 .text_center {
   text-align: center;
+}
+
+.text_right {
+  text-align: right;
 }
 
 @media screen and (min-width: 560px) {
@@ -310,7 +363,8 @@ li {
   .about {
     flex-direction: row-reverse;
   }
-  .about {
+  .about,
+  .contact {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -329,5 +383,12 @@ li {
   }
   .col_text {
     width: 50%;
+  }
+  .contact {
+    align-items: flex-start;
+  }
+  .contact .col {
+    width: 50%;
+    margin: 0;
   }
 }
