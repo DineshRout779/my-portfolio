@@ -2,7 +2,7 @@ const projects = [
   {
     image: "./images/BlogApp.png",
     name: "BlogApp",
-    techs: ["Handlebars", "Node.js", "Express", "MySQL"],
+    techs: ["HBS", "Node.js", "Express", "MySQL"],
     live: "https://agile-eyrie-30726.herokuapp.com/",
     github: "https://github.com/DineshRout779/BlogApp",
   },
@@ -17,7 +17,7 @@ const projects = [
     image: "./images/dash.png",
     name: "Dashboard",
     techs: ["HTML", "CSS", "JavScript", "GoogleChartAPI"],
-    live: "https://github.com/DineshRout779/Dashbord-UI",
-    github: "https://dashbord-ui.vercel.app/",
+    live: "https://dashbord-ui.vercel.app/",
+    github: "https://github.com/DineshRout779/Dashbord-UI",
   },
 ];
