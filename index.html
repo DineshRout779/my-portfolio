@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinesh Rout</title>
+    <title>Dinesh Rout | Portfolio</title>
     <script src="https://kit.fontawesome.com/357dd17236.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,10 +18,7 @@
         <div class="container header">
             <div class="header_top">
                 <div class="logo">
-                    <div class="angle angle_right"></div>
-                    <h3 class="underline">DINESH</h3>
-                    <div class="slash"></div>
-                    <div class="angle angle_left"></div>
+                    <h3 class="logo_text">DINESH<span class="underline"></span></h3>
                 </div>
                 <div class="menu" id="menu">
                     <div class="menu_bar"></div>
@@ -33,7 +30,7 @@
                 <a href="#hero" class="nav_link">Home</a>
                 <a href="#about" class="nav_link">About</a>
                 <a href="#projects" class="nav_link">Projects</a>
-                <a href="#" class="nav_link">Blogs</a>
+                <a href="#blogs" class="nav_link">Blogs</a>
                 <a href="#" class="nav_link">Contact</a>
             </nav>
         </div>
@@ -41,7 +38,7 @@
     <section class="hero" id="hero">
         <div class="container intro text_center">
             <p class="slogan">Hi There, I'm</p>
-            <h1 class="bg-text">Dinesh Rout</h1>
+            <h1 class="bg-text logo_text">Dinesh Rout <span class="underline"></span></h1>
             <p class="slogan">A Frontend Web Developer</p>
         </div>
     </section>
@@ -52,7 +49,7 @@
                 <img src="./images/Dinesh.jpeg" alt="Dinesh Rout">
             </div>
             <div class="col col_text">
-                <h1>About Me</h1>
+                <h1 class="logo_text">About Me <span class="underline"></span></h1>
                 <p>
                     I'm, Dinesh Rout, a Web Developer proficient in building frontend websites using HTML, CSS and
                     JavaScript. I'm
@@ -81,19 +78,39 @@
     </section>
     <section class="section projects_container" id="projects">
         <div class="container projects">
-            <h1>Projects</h1>
+            <h1 class="logo_text">Projects <span class="underline"></span></h1>
             <div class="cards_container">
                 <!-- It will be generated dynamically -->
             </div>
             <div class="text_center">
-                <a href="#" class="cta cta_rev cta_more">
-                    View More
+                <a href="allprojects.html" class="cta cta_rev cta_more">
+                    View More <i class="fa fa-arrow-right"></i>
                 </a>
             </div>
         </div>
     </section>
+    <section class="section blogs_container" id="blogs">
+        <div class="container blogs">
+            <h1 class="logo_text">Blogs <span class="underline"></span></h1>
+            <a href="#" class="blog">
+                <h3>blog post</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A magni repellendus voluptate totam
+                    architecto officiis accusantium similique aliquid quam eligendi.</p>
+            </a href="#">
+            <a href="#" class="blog">
+                <h3>blog post</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A magni repellendus voluptate totam
+                    architecto officiis accusantium similique aliquid quam eligendi.</p>
+            </a href="#">
+            <a href="#" class="blog">
+                <h3>blog post</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A magni repellendus voluptate totam
+                    architecto officiis accusantium similique aliquid quam eligendi.</p>
+            </a href="#">
+        </div>
+    </section>
     <script src="./data.js"></script>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
