@@ -4,6 +4,7 @@
   --primary-light-blue: rgb(78, 92, 218);
   --hover-blue: rgb(30, 48, 202);
   --primary-yellow: rgb(255, 237, 75);
+  --light-yellow: #fdf7bd;
 }
 
 html {
@@ -172,7 +173,7 @@ li {
 .projects,
 .blogs,
 .contact {
-  background-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.363);
   backdrop-filter: blur(20px);
   padding: 1em;
   border-radius: 4px;
@@ -215,6 +216,10 @@ li {
   align-items: center;
 }
 
+.all_projects {
+  margin: 2em auto;
+}
+
 .cta {
   font-size: 0.8em;
   width: 45%;
@@ -253,6 +258,7 @@ li {
   border-radius: 4px;
   color: var(--light-black);
   transition: all 0.4s ease;
+  box-shadow: 0 0 10px 0 rgb(241, 234, 234);
 }
 
 .blog:hover {
@@ -266,6 +272,10 @@ li {
 
 .form {
   width: 100%;
+  background-color: var(--white);
+  padding: 1em;
+  border-radius: 4px;
+  box-shadow: 5px 0 10px rgb(245, 241, 241);
 }
 
 .form_control:not(.cta) {
@@ -274,7 +284,7 @@ li {
   padding: 0.6em;
   font-size: 1em;
   margin: 0.5em 0;
-  border: 2px solid var(--white);
+  border: 2px solid rgb(236, 233, 233);
   outline: none;
   border-radius: 4px;
 }
@@ -326,7 +336,8 @@ textarea {
 }
 
 @media screen and (min-width: 560px) {
-  .cards_container {
+  .cards_container,
+  .all_cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2em;
@@ -336,7 +347,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   body::before {
-    background: url("images/bg.jpg") no-repeat center center;
+    background: url("images/Surface\ Book\ -\ 1.jpg") no-repeat center center;
   }
   .header {
     display: flex;
@@ -345,6 +356,9 @@ textarea {
   }
   .header_top {
     border: none;
+  }
+  .header_top .cta_rev {
+    display: block;
   }
   .menu {
     display: none;
@@ -369,7 +383,8 @@ textarea {
     justify-content: space-between;
     align-items: center;
   }
-  .cards_container {
+  .cards_container,
+  .all_cards {
     grid-template-columns: repeat(3, 1fr);
   }
   .card {
@@ -383,9 +398,6 @@ textarea {
   }
   .col_text {
     width: 50%;
-  }
-  .contact {
-    align-items: flex-start;
   }
   .contact .col {
     width: 50%;

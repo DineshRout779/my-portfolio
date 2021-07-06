@@ -62,3 +62,9 @@ projects.map((project) => {
 
   cards_container.appendChild(card);
 });
+
+const cards = document.querySelectorAll(".card");
+
+console.log(cards);
+
+console.log(cards.length);
