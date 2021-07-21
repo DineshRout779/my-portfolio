@@ -1,96 +1,98 @@
-{
-  "personal": [
-    {
-      "image": "./images/BlogApp.png",
-      "name": "BlogApp",
-      "techs": [
-        "HBS",
-        "Node.js",
-        "Express",
-        "MySQL"
-      ],
-      "live": "https://agile-eyrie-30726.herokuapp.com/",
-      "github": "https://github.com/DineshRout779/BlogApp"
-    },
-    {
-      "image": "./images/fakestore.png",
-      "name": "FakeStore",
-      "techs": [
-        "React",
-        "Redux"
-      ],
-      "live": "https://demo-fakestore.netlify.app/",
-      "github": "https://github.com/DineshRout779/Dashbord-UI"
-    },
-    {
-      "image": "./images/weather-app.png",
-      "name": "Weather App",
-      "techs": [
-        "React",
-        "OpenWeatherMapAPI"
-      ],
-      "live": "https://react-weather-app-fawn.vercel.app/",
-      "github": "https://github.com/DineshRout779/React-weather-app"
-    },
-    {
-      "image": "./images/dash.png",
-      "name": "Dashboard",
-      "techs": [
-        "HTML",
-        "CSS",
-        "JavScript",
-        "GoogleChartAPI"
-      ],
-      "live": "https://dashbord-ui.vercel.app/",
-      "github": "https://github.com/DineshRout779/Dashbord-UI"
-    },
-    {
-      "image": "./images/URLShortener.png",
-      "name": "URL Shortener",
-      "techs": [
-        "HTML",
-        "CSS",
-        "JavScript",
-        "API"
-      ],
-      "live": "https://url-shortening-seven.vercel.app/",
-      "github": "https://github.com/DineshRout779/URL-shortening"
-    },
-    {
-      "image": "./images/Room-Homepage.png",
-      "name": "Room Homepage",
-      "techs": [
-        "HTML",
-        "CSS",
-        "JavScript"
-      ],
-      "live": "https://room-homepage-challange-git-main-dineshrout779.vercel.app/",
-      "github": "https://github.com/DineshRout779/Room_Homepage_Challange"
-    },
-    {
-      "image": "./images/product-landing-page.png",
-      "name": "Product Landing page",
-      "techs": [
-        "HTML",
-        "CSS",
-        "JavScript"
-      ],
-      "live": "https://dinesh-pl.netlify.app/",
-      "github": "https://github.com/DineshRout779/Landing_Page"
-    },
-    {
-      "image": "./images/food.png",
-      "name": "Restaurant Website",
-      "techs": [
-        "HTML",
-        "CSS",
-        "JavScript"
-      ],
-      "live": "https://dinesh-food.netlify.app/",
-      "github": "https://github.com/DineshRout779/Food-website"
-    }
-  ],
-  "levelZero": [
-    {}
-  ]
-}
+[
+  {
+    "personal": [
+      {
+        "image": "./images/BlogApp.png",
+        "name": "BlogApp",
+        "techs": [
+          "HBS",
+          "Node.js",
+          "Express",
+          "MySQL"
+        ],
+        "live": "https://agile-eyrie-30726.herokuapp.com/",
+        "github": "https://github.com/DineshRout779/BlogApp"
+      },
+      {
+        "image": "./images/fakestore.png",
+        "name": "FakeStore",
+        "techs": [
+          "React",
+          "Redux"
+        ],
+        "live": "https://demo-fakestore.netlify.app/",
+        "github": "https://github.com/DineshRout779/Dashbord-UI"
+      },
+      {
+        "image": "./images/weather-app.png",
+        "name": "Weather App",
+        "techs": [
+          "React",
+          "OpenWeatherMapAPI"
+        ],
+        "live": "https://react-weather-app-fawn.vercel.app/",
+        "github": "https://github.com/DineshRout779/React-weather-app"
+      },
+      {
+        "image": "./images/dash.png",
+        "name": "Dashboard",
+        "techs": [
+          "HTML",
+          "CSS",
+          "JavScript",
+          "GoogleChartAPI"
+        ],
+        "live": "https://dashbord-ui.vercel.app/",
+        "github": "https://github.com/DineshRout779/Dashbord-UI"
+      },
+      {
+        "image": "./images/URLShortener.png",
+        "name": "URL Shortener",
+        "techs": [
+          "HTML",
+          "CSS",
+          "JavScript",
+          "API"
+        ],
+        "live": "https://url-shortening-seven.vercel.app/",
+        "github": "https://github.com/DineshRout779/URL-shortening"
+      },
+      {
+        "image": "./images/Room-Homepage.png",
+        "name": "Room Homepage",
+        "techs": [
+          "HTML",
+          "CSS",
+          "JavScript"
+        ],
+        "live": "https://room-homepage-challange-git-main-dineshrout779.vercel.app/",
+        "github": "https://github.com/DineshRout779/Room_Homepage_Challange"
+      },
+      {
+        "image": "./images/product-landing-page.png",
+        "name": "Product Landing page",
+        "techs": [
+          "HTML",
+          "CSS",
+          "JavScript"
+        ],
+        "live": "https://dinesh-pl.netlify.app/",
+        "github": "https://github.com/DineshRout779/Landing_Page"
+      },
+      {
+        "image": "./images/food.png",
+        "name": "Restaurant Website",
+        "techs": [
+          "HTML",
+          "CSS",
+          "JavScript"
+        ],
+        "live": "https://dinesh-food.netlify.app/",
+        "github": "https://github.com/DineshRout779/Food-website"
+      }
+    ],
+    "levelZero": [
+      {}
+    ]
+  }
+]
