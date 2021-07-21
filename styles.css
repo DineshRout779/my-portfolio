@@ -60,8 +60,8 @@ img {
 
 /* header */
 header {
-  background-color: rgba(144, 152, 231, 0.178);
-  backdrop-filter: blur(20px);
+  background-color: rgba(131, 206, 230, 0.212);
+  backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
   z-index: 999;
@@ -179,6 +179,58 @@ li {
   border-radius: 4px;
   position: relative;
   z-index: 2;
+}
+
+.tabs {
+  display: flex;
+  background-color: rgb(251, 248, 248);
+  position: relative;
+  border-radius: 6px 6px 0 0;
+}
+
+.tab {
+  user-select: none;
+  flex-grow: 1;
+  text-align: center;
+  padding: 0.65em;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  animation: fade-in 0.2s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* .tab.active {
+  border: 1px solid red;
+} */
+
+.active-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /*width should depend on 100/no. of tabs*/
+  width: 50%;
+  height: 3px;
+  background-color: rgb(147, 97, 238);
+  transition: all 0.2s ease-in-out;
+}
+
+.content {
+  padding: 1em;
+  display: none;
+  animation: fade-in 0.3s ease-in-out;
+}
+
+.content.active {
+  display: block;
 }
 
 .card {
