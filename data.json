@@ -93,7 +93,15 @@
       }
     ],
     "levelZero": [
-      {}
+      {
+        "image": "./images/cli-app.jpg",
+        "name": "A CLI App",
+        "techs": [
+          "JS"
+        ],
+        "live": "https://replit.com/@DineshRout/HowWellYouKnowMe#index.js?embed=1&output=1",
+        "github": "https://github.com/DineshRout779/levelZero-lessonOne"
+      }
     ]
   }
 ]
