@@ -101,6 +101,17 @@
         ],
         "live": "https://replit.com/@DineshRout/HowWellYouKnowMe#index.js?embed=1&output=1",
         "github": "https://github.com/DineshRout779/levelZero-lessonOne"
+      },
+      {
+        "image": "./images/portfolio.png",
+        "name": "Portfolio",
+        "techs": [
+          "HTML",
+          "CSS",
+          "JS"
+        ],
+        "live": "https://dineshrout.netlify.app/",
+        "github": "https://github.com/DineshRout779/Dinesh"
       }
     ]
   }
