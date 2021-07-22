@@ -18,7 +18,8 @@
         "name": "FakeStore",
         "techs": [
           "React",
-          "Redux"
+          "Redux",
+          "API"
         ],
         "live": "https://demo-fakestore.netlify.app/",
         "github": "https://github.com/DineshRout779/Dashbord-UI"
@@ -39,7 +40,7 @@
         "techs": [
           "HTML",
           "CSS",
-          "JavScript",
+          "JS",
           "GoogleChartAPI"
         ],
         "live": "https://dashbord-ui.vercel.app/",
@@ -51,7 +52,7 @@
         "techs": [
           "HTML",
           "CSS",
-          "JavScript",
+          "JS",
           "API"
         ],
         "live": "https://url-shortening-seven.vercel.app/",
@@ -63,7 +64,7 @@
         "techs": [
           "HTML",
           "CSS",
-          "JavScript"
+          "JS"
         ],
         "live": "https://room-homepage-challange-git-main-dineshrout779.vercel.app/",
         "github": "https://github.com/DineshRout779/Room_Homepage_Challange"
@@ -74,7 +75,7 @@
         "techs": [
           "HTML",
           "CSS",
-          "JavScript"
+          "JS"
         ],
         "live": "https://dinesh-pl.netlify.app/",
         "github": "https://github.com/DineshRout779/Landing_Page"
@@ -85,7 +86,7 @@
         "techs": [
           "HTML",
           "CSS",
-          "JavScript"
+          "JS"
         ],
         "live": "https://dinesh-food.netlify.app/",
         "github": "https://github.com/DineshRout779/Food-website"

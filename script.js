@@ -52,7 +52,7 @@ const fetchData = () => {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      // console.log(data);
       createCards(data);
     })
     .catch((e) => console.log(e));
@@ -93,5 +93,5 @@ const createCards = (data) => {
     card.appendChild(card_desc);
     personalProjects.appendChild(card);
   }
-  console.log(personalProjects);
+  // console.log(personalProjects);
 };
