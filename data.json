@@ -2,34 +2,10 @@
   {
     "personal": [
       {
-        "image": "./images/BlogApp.png",
-        "name": "BlogApp",
-        "techs": [
-          "HBS",
-          "Node.js",
-          "Express",
-          "MySQL"
-        ],
-        "live": "https://agile-eyrie-30726.herokuapp.com/",
-        "github": "https://github.com/DineshRout779/BlogApp"
-      },
-      {
-        "image": "./images/fakestore.png",
-        "name": "FakeStore",
-        "techs": [
-          "React",
-          "Redux",
-          "API"
-        ],
-        "live": "https://demo-fakestore.netlify.app/",
-        "github": "https://github.com/DineshRout779/Dashbord-UI"
-      },
-      {
         "image": "./images/weather-app.png",
         "name": "Weather App",
         "techs": [
-          "React",
-          "OpenWeatherMapAPI"
+          "React"
         ],
         "live": "https://react-weather-app-fawn.vercel.app/",
         "github": "https://github.com/DineshRout779/React-weather-app"
@@ -40,8 +16,7 @@
         "techs": [
           "HTML",
           "CSS",
-          "JS",
-          "GoogleChartAPI"
+          "JS"
         ],
         "live": "https://dashbord-ui.vercel.app/",
         "github": "https://github.com/DineshRout779/Dashbord-UI"
@@ -52,8 +27,7 @@
         "techs": [
           "HTML",
           "CSS",
-          "JS",
-          "API"
+          "JS"
         ],
         "live": "https://url-shortening-seven.vercel.app/",
         "github": "https://github.com/DineshRout779/URL-shortening"
