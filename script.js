@@ -52,18 +52,18 @@ const fetchData = () => {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      // console.log(data);
-      createPersonalCards(data);
-      createLevelZeroCards(data);
+      // display at most 4 projects in the homepage
+      createPersonalCards(data, 4);
+      createLevelZeroCards(data, 4);
     })
     .catch((e) => console.log(e));
 };
 
-const createPersonalCards = (data) => {
+const createPersonalCards = (data, len) => {
   const { personal } = data[0];
   // console.log(personal);
 
-  for (let i = 0; i < personal.length; i++) {
+  for (let i = 0; i < len; i++) {
     const card = document.createElement("div");
     const card_img = document.createElement("div");
     const img = document.createElement("img");
@@ -109,14 +109,16 @@ const createPersonalCards = (data) => {
     card.appendChild(card_desc);
     personalProjects.appendChild(card);
   }
-  // console.log(personalProjects);
 };
 
-const createLevelZeroCards = (data) => {
+const createLevelZeroCards = (data, len) => {
   const { levelZero } = data[0];
-  // console.log(levelZero);
 
-  for (let i = 0; i < levelZero.length; i++) {
+  if (len > levelZero.length) {
+    len = levelZero.length;
+  }
+
+  for (let i = 0; i < len; i++) {
     const card = document.createElement("div");
     const card_img = document.createElement("div");
     const img = document.createElement("img");
@@ -162,5 +164,4 @@ const createLevelZeroCards = (data) => {
     card.appendChild(card_desc);
     levelZeroProjects.appendChild(card);
   }
-  console.log(levelZeroProjects);
 };
