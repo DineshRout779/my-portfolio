@@ -86,6 +86,17 @@
         ],
         "live": "https://dineshrout.netlify.app/",
         "github": "https://github.com/DineshRout779/Dinesh"
+      },
+      {
+        "image": "https://wallpapercave.com/wp/wp3188642.jpg",
+        "name": "Minion Talk",
+        "techs": [
+          "HTML",
+          "CSS",
+          "JS"
+        ],
+        "live": "https://dineshrout.netlify.app/",
+        "github": "https://github.com/DineshRout779/levelZero-MinionTalk"
       }
     ]
   }
