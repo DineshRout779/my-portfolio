@@ -77,6 +77,15 @@
         "github": "https://github.com/DineshRout779/levelZero-lessonOne"
       },
       {
+        "image": "./images/marvel.jpg",
+        "name": "Marvel Quiz",
+        "techs": [
+          "JS"
+        ],
+        "live": "https://jz7dx.csb.app/",
+        "github": "https://github.com/DineshRout779/Emoji-Interpreter"
+      },
+      {
         "image": "./images/portfolio.png",
         "name": "Portfolio",
         "techs": [
