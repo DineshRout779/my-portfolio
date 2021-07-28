@@ -95,8 +95,17 @@
           "CSS",
           "JS"
         ],
-        "live": "https://dineshrout.netlify.app/",
+        "live": "https://miniontalkz.netlify.app/",
         "github": "https://github.com/DineshRout779/levelZero-MinionTalk"
+      },
+      {
+        "image": "./images/emoji.jpg",
+        "name": "Emoji Interpreter",
+        "techs": [
+          "React"
+        ],
+        "live": "https://jz7dx.csb.app/",
+        "github": "https://github.com/DineshRout779/Emoji-Interpreter"
       }
     ]
   }
