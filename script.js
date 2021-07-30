@@ -40,39 +40,30 @@ const switchTab = (i) => {
   tabIndicator.style.left = `${(100 / tabs.length) * i}%`;
 };
 
-window.addEventListener("load", () => {
-  switchTab(0);
-  fetchData();
-});
-
 const allPersonalCards = document.createElement("div");
 
-const fetchData = () => {
+const fetchData = (length) => {
   const url = "./data.json";
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
       // display at most 4 projects in the homepage
-      createPersonalCards(data, 4);
-      createLevelZeroCards(data, 4);
+      createPersonalCards(data, length);
+      createLevelZeroCards(data, length);
     })
     .catch((e) => console.log(e));
 };
 
-const createPersonalCards = (data, len) => {
-  const {personal}  = data[0];
+const createPersonalCards = (data, len = data[0].personal.length) => {
+  const { personal } = data[0];
   // console.log(personal);
 
   for (let i = 0; i < len; i++) {
     const techs = personal[i].techs;
 
     const tech_list = `<ul>
-      ${techs.map(tech => 
-        `<li>${tech}</li>`
-      ).join(" ")}
-    </ul>`
-    ;
-
+      ${techs.map((tech) => `<li>${tech}</li>`).join(" ")}
+    </ul>`;
     const card = `
       <div class="card">
         <div class="card_img">
@@ -93,7 +84,7 @@ const createPersonalCards = (data, len) => {
   }
 };
 
-const createLevelZeroCards = (data, len) => {
+const createLevelZeroCards = (data, len = data[0].levelZero.length) => {
   const { levelZero } = data[0];
 
   if (len > levelZero.length) {
@@ -101,16 +92,11 @@ const createLevelZeroCards = (data, len) => {
   }
 
   for (let i = 0; i < len; i++) {
-
     const techs = levelZero[i].techs;
 
     const tech_list = `<ul>
-      ${techs.map(tech => 
-        `<li>${tech}</li>`
-      ).join(" ")}
-    </ul>`
-    ;
-
+      ${techs.map((tech) => `<li>${tech}</li>`).join(" ")}
+    </ul>`;
     const card = `
       <div class="card">
         <div class="card_img">
@@ -130,4 +116,3 @@ const createLevelZeroCards = (data, len) => {
     levelZeroProjects.innerHTML += card;
   }
 };
-
