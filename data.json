@@ -2,66 +2,51 @@
   {
     "personal": [
       {
+        "image": "./images/blogapp.png",
+        "name": "BlogApp",
+        "techs": ["Node.js", "Express", "MySQL"],
+        "live": "https://drblog.herokuapp.com/",
+        "github": "https://github.com/DineshRout779/BlogApp"
+      },
+      {
         "image": "./images/weather-app.png",
         "name": "Weather App",
-        "techs": [
-          "React"
-        ],
+        "techs": ["React"],
         "live": "https://react-weather-app-fawn.vercel.app/",
         "github": "https://github.com/DineshRout779/React-weather-app"
       },
       {
         "image": "./images/dash.png",
         "name": "Dashboard",
-        "techs": [
-          "HTML",
-          "CSS",
-          "JS"
-        ],
+        "techs": ["HTML", "CSS", "JS"],
         "live": "https://dashbord-ui.vercel.app/",
         "github": "https://github.com/DineshRout779/Dashbord-UI"
       },
       {
         "image": "./images/URLShortener.png",
         "name": "URL Shortener",
-        "techs": [
-          "HTML",
-          "CSS",
-          "JS"
-        ],
+        "techs": ["HTML", "CSS", "JS"],
         "live": "https://url-shortening-seven.vercel.app/",
         "github": "https://github.com/DineshRout779/URL-shortening"
       },
       {
         "image": "./images/Room-Homepage.png",
         "name": "Room Homepage",
-        "techs": [
-          "HTML",
-          "CSS",
-          "JS"
-        ],
+        "techs": ["HTML", "CSS", "JS"],
         "live": "https://room-homepage-challange-git-main-dineshrout779.vercel.app/",
         "github": "https://github.com/DineshRout779/Room_Homepage_Challange"
       },
       {
         "image": "./images/product-landing-page.png",
         "name": "Product Landing page",
-        "techs": [
-          "HTML",
-          "CSS",
-          "JS"
-        ],
+        "techs": ["HTML", "CSS", "JS"],
         "live": "https://dinesh-pl.netlify.app/",
         "github": "https://github.com/DineshRout779/Landing_Page"
       },
       {
         "image": "./images/food.png",
         "name": "Restaurant Website",
-        "techs": [
-          "HTML",
-          "CSS",
-          "JS"
-        ],
+        "techs": ["HTML", "CSS", "JS"],
         "live": "https://dinesh-food.netlify.app/",
         "github": "https://github.com/DineshRout779/Food-website"
       }
@@ -70,49 +55,35 @@
       {
         "image": "./images/cli-app.jpg",
         "name": "A CLI App",
-        "techs": [
-          "JS"
-        ],
+        "techs": ["JS"],
         "live": "https://replit.com/@DineshRout/HowWellYouKnowMe#index.js?embed=1&output=1",
         "github": "https://github.com/DineshRout779/levelZero-lessonOne"
       },
       {
         "image": "./images/marvel.jpg",
         "name": "Marvel Quiz",
-        "techs": [
-          "JS"
-        ],
+        "techs": ["JS"],
         "live": "https://replit.com/@DineshRout/Marvel-quiz",
         "github": "https://github.com/DineshRout779/levelZero-marvelQuiz"
       },
       {
         "image": "./images/portfolio.png",
         "name": "Portfolio",
-        "techs": [
-          "HTML",
-          "CSS",
-          "JS"
-        ],
+        "techs": ["HTML", "CSS", "JS"],
         "live": "https://dineshrout.netlify.app/",
         "github": "https://github.com/DineshRout779/Dinesh"
       },
       {
         "image": "https://wallpapercave.com/wp/wp3188642.jpg",
         "name": "Minion Talk",
-        "techs": [
-          "HTML",
-          "CSS",
-          "JS"
-        ],
+        "techs": ["HTML", "CSS", "JS"],
         "live": "https://miniontalkz.netlify.app/",
         "github": "https://github.com/DineshRout779/levelZero-MinionTalk"
       },
       {
         "image": "./images/emoji.jpg",
         "name": "Emoji Interpreter",
-        "techs": [
-          "React"
-        ],
+        "techs": ["React"],
         "live": "https://jz7dx.csb.app/",
         "github": "https://github.com/DineshRout779/Emoji-Interpreter"
       }
