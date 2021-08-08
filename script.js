@@ -1,27 +1,27 @@
-const menu = document.getElementById("menu");
-const nav = document.querySelector(".nav");
-const nav_links = document.querySelectorAll(".nav_link");
-const levelZeroProjects = document.querySelector(".levelZero");
-const personalProjects = document.querySelector(".personal");
+const menu = document.getElementById('menu');
+const nav = document.querySelector('.nav');
+const nav_links = document.querySelectorAll('.nav_link');
+const levelZeroProjects = document.querySelector('.levelZero');
+const personalProjects = document.querySelector('.personal');
 
-menu.addEventListener("click", () => {
-  nav.classList.toggle("open");
+menu.addEventListener('click', () => {
+  nav.classList.toggle('open');
 });
 
 for (let i = 0; i < nav_links.length; i++) {
-  nav_links[i].addEventListener("click", () => {
-    if (nav.classList.contains("open")) {
-      nav.classList.remove("open");
+  nav_links[i].addEventListener('click', () => {
+    if (nav.classList.contains('open')) {
+      nav.classList.remove('open');
     }
   });
 }
 
-const tabs = document.querySelectorAll(".tab");
-const contents = document.querySelectorAll(".content");
-const tabIndicator = document.querySelector(".active-indicator");
+const tabs = document.querySelectorAll('.tab');
+const contents = document.querySelectorAll('.content');
+const tabIndicator = document.querySelector('.active-indicator');
 
 for (let i = 0; i < tabs.length; i++) {
-  tabs[i].addEventListener("click", () => {
+  tabs[i].addEventListener('click', () => {
     removeActive(); //remove all active classes
     switchTab(i); //add active to current tab
   });
@@ -29,21 +29,21 @@ for (let i = 0; i < tabs.length; i++) {
 
 const removeActive = () => {
   for (let i = 0; i < tabs.length; i++) {
-    tabs[i].classList.remove("active");
-    contents[i].classList.remove("active");
+    tabs[i].classList.remove('active');
+    contents[i].classList.remove('active');
   }
 };
 
 const switchTab = (i) => {
-  tabs[i].classList.add("active");
-  contents[i].classList.add("active");
+  tabs[i].classList.add('active');
+  contents[i].classList.add('active');
   tabIndicator.style.left = `${(100 / tabs.length) * i}%`;
 };
 
-const allPersonalCards = document.createElement("div");
+const allPersonalCards = document.createElement('div');
 
 const fetchData = (length) => {
-  const url = "./data.json";
+  const url = './data.json';
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
@@ -62,7 +62,7 @@ const createPersonalCards = (data, len = data[0].personal.length) => {
     const techs = personal[i].techs;
 
     const tech_list = `<ul>
-      ${techs.map((tech) => `<li>${tech}</li>`).join(" ")}
+      ${techs.map((tech) => `<li>${tech}</li>`).join(' ')}
     </ul>`;
     const card = `
       <div class="card">
@@ -72,6 +72,7 @@ const createPersonalCards = (data, len = data[0].personal.length) => {
         <div class="card_desc">
           <div>${tech_list}</div>
           <h1>${personal[i].name}</h1>
+          <small>${personal[i].finishedAt}</small>
           <div class="cta_container">
             <a href="${personal[i].live}" target="_blank" class="cta">Live</a>
             <a href="${personal[i].github}" target="_blank" class="cta cta_rev"><i class='fa fa-github'></i> Code</a>
@@ -95,7 +96,7 @@ const createLevelZeroCards = (data, len = data[0].levelZero.length) => {
     const techs = levelZero[i].techs;
 
     const tech_list = `<ul>
-      ${techs.map((tech) => `<li>${tech}</li>`).join(" ")}
+      ${techs.map((tech) => `<li>${tech}</li>`).join(' ')}
     </ul>`;
     const card = `
       <div class="card">
@@ -105,6 +106,7 @@ const createLevelZeroCards = (data, len = data[0].levelZero.length) => {
         <div class="card_desc">
           <div>${tech_list}</div>
           <h1>${levelZero[i].name}</h1>
+          <small>${levelZero[i].finishedAt}</small>
           <div class="cta_container">
             <a href="${levelZero[i].live}" target="_blank" class="cta">Live</a>
             <a href="${levelZero[i].github}" target="_blank" class="cta cta_rev"><i class='fa fa-github'></i> Code</a>

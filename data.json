@@ -4,95 +4,184 @@
       {
         "image": "./images/blogapp.png",
         "name": "BlogApp",
-        "techs": ["Node.js", "Express", "MySQL"],
+        "techs": [
+          "Node.js",
+          "Express",
+          "MySQL"
+        ],
         "live": "https://drblog.herokuapp.com/",
-        "github": "https://github.com/DineshRout779/BlogApp"
+        "github": "https://github.com/DineshRout779/BlogApp",
+        "finishedAt": "30/07/2021"
+      },
+      {
+        "image": "./images/notes-app.png",
+        "name": "Notes App",
+        "techs": [
+          "React"
+        ],
+        "live": "https://react-notes-app-rust.vercel.app/",
+        "github": "https://github.com/DineshRout779/react-notes-app",
+        "finishedAt": "08/08/2021"
       },
       {
         "image": "./images/weather-app.png",
         "name": "Weather App",
-        "techs": ["React"],
+        "techs": [
+          "React"
+        ],
         "live": "https://react-weather-app-fawn.vercel.app/",
-        "github": "https://github.com/DineshRout779/React-weather-app"
+        "github": "https://github.com/DineshRout779/React-weather-app",
+        "finishedAt": "30/07/2021"
       },
       {
-        "image": "./images/dash.png",
-        "name": "Dashboard",
-        "techs": ["HTML", "CSS", "JS"],
-        "live": "https://dashbord-ui.vercel.app/",
-        "github": "https://github.com/DineshRout779/Dashbord-UI"
+        "image": "./images/jsprojects.png",
+        "name": "Mini Projects",
+        "techs": [
+          "HTML",
+          "CSS",
+          "JS"
+        ],
+        "live": "https://dineshrout779.github.io/Javascript-Projects/",
+        "github": "https://github.com/DineshRout779/Javascript-Projects",
+        "finishedAt": "19/11/2020"
       },
       {
         "image": "./images/URLShortener.png",
         "name": "URL Shortener",
-        "techs": ["HTML", "CSS", "JS"],
+        "techs": [
+          "HTML",
+          "CSS",
+          "JS"
+        ],
         "live": "https://url-shortening-seven.vercel.app/",
-        "github": "https://github.com/DineshRout779/URL-shortening"
+        "github": "https://github.com/DineshRout779/URL-shortening",
+        "finishedAt": "30/07/2021"
       },
       {
         "image": "./images/Room-Homepage.png",
         "name": "Room Homepage",
-        "techs": ["HTML", "CSS", "JS"],
+        "techs": [
+          "HTML",
+          "CSS",
+          "JS"
+        ],
         "live": "https://room-homepage-challange-git-main-dineshrout779.vercel.app/",
-        "github": "https://github.com/DineshRout779/Room_Homepage_Challange"
+        "github": "https://github.com/DineshRout779/Room_Homepage_Challange",
+        "finishedAt": "30/07/2021"
       },
       {
         "image": "./images/product-landing-page.png",
         "name": "Product Landing page",
-        "techs": ["HTML", "CSS", "JS"],
+        "techs": [
+          "HTML",
+          "CSS",
+          "JS"
+        ],
         "live": "https://dinesh-pl.netlify.app/",
-        "github": "https://github.com/DineshRout779/Landing_Page"
+        "github": "https://github.com/DineshRout779/Landing_Page",
+        "finishedAt": "30/07/2021"
       },
       {
         "image": "./images/food.png",
         "name": "Restaurant Website",
-        "techs": ["HTML", "CSS", "JS"],
+        "techs": [
+          "HTML",
+          "CSS",
+          "JS"
+        ],
         "live": "https://dinesh-food.netlify.app/",
-        "github": "https://github.com/DineshRout779/Food-website"
+        "github": "https://github.com/DineshRout779/Food-website",
+        "finishedAt": "30/07/2021"
       }
     ],
     "levelZero": [
       {
+        "image": "https://bsmedia.business-standard.com/media-handler.php?mediaPath=https://bsmedia.business-standard.com/_media/bs/img/article/2019-11/03/full/1572796865-0693.jpg&width=1200",
+        "name": "TriangleQuiz",
+        "techs": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "live": "https://serene-euclid-2b069d.netlify.app/",
+        "github": "https://github.com/DineshRout779/levelZero-triangleQuiz",
+        "finishedAt": "07/08/2021"
+      },
+      {
+        "image": "./images/bday.png",
+        "name": "Lucky Birthday",
+        "techs": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "live": "https://is-lucky-birthday.netlify.app/",
+        "github": "https://github.com/DineshRout779/levelZero-luckybirthday",
+        "finishedAt": "07/08/2021"
+      },
+      {
         "image": "https://assets.entrepreneur.com/content/3x2/2000/20191219170611-GettyImages-1152794789.jpeg",
         "name": "BookApp",
-        "techs": ["React"],
+        "techs": [
+          "React"
+        ],
         "live": "https://xfkyk.csb.app/",
-        "github": "https://github.com/DineshRout779/neog-bookApps"
+        "github": "https://github.com/DineshRout779/neog-bookApps",
+        "finishedAt": "30/07/2021"
       },
       {
         "image": "./images/emoji.jpg",
-        "name": "Emoji Interpreter",
-        "techs": ["React"],
+        "name": "EmojiPedia",
+        "techs": [
+          "React"
+        ],
         "live": "https://jz7dx.csb.app/",
-        "github": "https://github.com/DineshRout779/Emoji-Interpreter"
+        "github": "https://github.com/DineshRout779/Emoji-Interpreter",
+        "finishedAt": "28/07/2021"
       },
       {
         "image": "https://wallpapercave.com/wp/wp3188642.jpg",
         "name": "Minion Talk",
-        "techs": ["HTML", "CSS", "JS"],
+        "techs": [
+          "HTML",
+          "CSS",
+          "JS"
+        ],
         "live": "https://miniontalkz.netlify.app/",
-        "github": "https://github.com/DineshRout779/levelZero-MinionTalk"
+        "github": "https://github.com/DineshRout779/levelZero-MinionTalk",
+        "finishedAt": "26/07/2021"
       },
       {
         "image": "./images/portfolio.png",
         "name": "Portfolio",
-        "techs": ["HTML", "CSS", "JS"],
+        "techs": [
+          "HTML",
+          "CSS",
+          "JS"
+        ],
         "live": "https://dineshrout.netlify.app/",
-        "github": "https://github.com/DineshRout779/Dinesh"
+        "github": "https://github.com/DineshRout779/Dinesh",
+        "finishedAt": "08/08/2021"
       },
       {
         "image": "./images/marvel.jpg",
         "name": "Marvel Quiz",
-        "techs": ["JS"],
+        "techs": [
+          "JS"
+        ],
         "live": "https://replit.com/@DineshRout/Marvel-quiz",
-        "github": "https://github.com/DineshRout779/levelZero-marvelQuiz"
+        "github": "https://github.com/DineshRout779/levelZero-marvelQuiz",
+        "finishedAt": "28/07/2021"
       },
       {
         "image": "./images/cli-app.jpg",
         "name": "A CLI App",
-        "techs": ["JS"],
+        "techs": [
+          "JS"
+        ],
         "live": "https://replit.com/@DineshRout/HowWellYouKnowMe#index.js?embed=1&output=1",
-        "github": "https://github.com/DineshRout779/levelZero-lessonOne"
+        "github": "https://github.com/DineshRout779/levelZero-lessonOne",
+        "finishedAt": "21/07/2021"
       }
     ]
   }
