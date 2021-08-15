@@ -96,6 +96,21 @@
     ],
     "levelZero": [
       {
+        "image": "https://asset5.scripbox.com/wp-content/uploads/2021/08/stock-return-vector.png",
+        "name": "Stock return",
+        "techs": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "live": "https://stockreturnlevelzero.netlify.app/",
+        "github": "https://github.com/DineshRout779/levelZero-stocks-earning",
+        "finishedAt": "15/08/2021",
+        "marks": [
+          "mark14"
+        ]
+      },
+      {
         "image": "https://bsmedia.business-standard.com/media-handler.php?mediaPath=https://bsmedia.business-standard.com/_media/bs/img/article/2019-11/03/full/1572796865-0693.jpg&width=1200",
         "name": "TriangleQuiz",
         "techs": [
@@ -105,7 +120,10 @@
         ],
         "live": "https://serene-euclid-2b069d.netlify.app/",
         "github": "https://github.com/DineshRout779/levelZero-triangleQuiz",
-        "finishedAt": "07/08/2021"
+        "finishedAt": "07/08/2021",
+        "marks": [
+          "mark12"
+        ]
       },
       {
         "image": "./images/bday.png",
@@ -117,7 +135,25 @@
         ],
         "live": "https://is-lucky-birthday.netlify.app/",
         "github": "https://github.com/DineshRout779/levelZero-luckybirthday",
-        "finishedAt": "07/08/2021"
+        "finishedAt": "07/08/2021",
+        "marks": [
+          "mark11"
+        ]
+      },
+      {
+        "image": "./images/cash.png",
+        "name": "Cash Register",
+        "techs": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "live": "https://cash-register-neog.netlify.app/",
+        "github": "https://github.com/DineshRout779/levelZero-cashRegister",
+        "finishedAt": "30/07/2021",
+        "marks": [
+          "mark10"
+        ]
       },
       {
         "image": "https://assets.entrepreneur.com/content/3x2/2000/20191219170611-GettyImages-1152794789.jpeg",
@@ -127,7 +163,10 @@
         ],
         "live": "https://xfkyk.csb.app/",
         "github": "https://github.com/DineshRout779/neog-bookApps",
-        "finishedAt": "30/07/2021"
+        "finishedAt": "30/07/2021",
+        "marks": [
+          "markNine"
+        ]
       },
       {
         "image": "./images/emoji.jpg",
@@ -137,7 +176,10 @@
         ],
         "live": "https://jz7dx.csb.app/",
         "github": "https://github.com/DineshRout779/Emoji-Interpreter",
-        "finishedAt": "28/07/2021"
+        "finishedAt": "28/07/2021",
+        "marks": [
+          "markEight"
+        ]
       },
       {
         "image": "https://wallpapercave.com/wp/wp3188642.jpg",
@@ -149,7 +191,10 @@
         ],
         "live": "https://miniontalkz.netlify.app/",
         "github": "https://github.com/DineshRout779/levelZero-MinionTalk",
-        "finishedAt": "26/07/2021"
+        "finishedAt": "26/07/2021",
+        "marks": [
+          "markSix"
+        ]
       },
       {
         "image": "./images/portfolio.png",
@@ -161,7 +206,12 @@
         ],
         "live": "https://dineshrout.netlify.app/",
         "github": "https://github.com/DineshRout779/Dinesh",
-        "finishedAt": "08/08/2021"
+        "finishedAt": "08/08/2021",
+        "marks": [
+          "markThree",
+          "markFour",
+          "markFive"
+        ]
       },
       {
         "image": "./images/marvel.jpg",
@@ -171,7 +221,10 @@
         ],
         "live": "https://replit.com/@DineshRout/Marvel-quiz",
         "github": "https://github.com/DineshRout779/levelZero-marvelQuiz",
-        "finishedAt": "28/07/2021"
+        "finishedAt": "28/07/2021",
+        "marks": [
+          "markTwo"
+        ]
       },
       {
         "image": "./images/cli-app.jpg",
@@ -181,7 +234,10 @@
         ],
         "live": "https://replit.com/@DineshRout/HowWellYouKnowMe#index.js?embed=1&output=1",
         "github": "https://github.com/DineshRout779/levelZero-lessonOne",
-        "finishedAt": "21/07/2021"
+        "finishedAt": "21/07/2021",
+        "marks": [
+          "markOne"
+        ]
       }
     ]
   }
