@@ -94,9 +94,13 @@ const createLevelZeroCards = (data, len = data[0].levelZero.length) => {
 
   for (let i = 0; i < len; i++) {
     const techs = levelZero[i].techs;
+    const marks = levelZero[i].marks;
 
     const tech_list = `<ul>
       ${techs.map((tech) => `<li>${tech}</li>`).join(' ')}
+    </ul>`;
+    const mark_list = `<ul>
+      ${marks.map((mark) => `<li class="mark">${mark}</li>`).join(' ')}
     </ul>`;
     const card = `
       <div class="card">
@@ -106,7 +110,7 @@ const createLevelZeroCards = (data, len = data[0].levelZero.length) => {
         <div class="card_desc">
           <div>${tech_list}</div>
           <h1>${levelZero[i].name}</h1>
-          <small>${levelZero[i].finishedAt}</small>
+          <small>${levelZero[i].finishedAt} ${mark_list}</small>
           <div class="cta_container">
             <a href="${levelZero[i].live}" target="_blank" class="cta">Live</a>
             <a href="${levelZero[i].github}" target="_blank" class="cta cta_rev"><i class='fa fa-github'></i> Code</a>
