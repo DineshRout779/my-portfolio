@@ -111,6 +111,21 @@
         ]
       },
       {
+        "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-birthday-instagram-captions-1584723902.jpg",
+        "name": "Palindrome Birthday!",
+        "techs": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "live": "https://pallindromicbday.netlify.app/",
+        "github": "https://github.com/DineshRout779/levelZero-pallindromicBirthday",
+        "finishedAt": "16/08/2021",
+        "marks": [
+          "mark13"
+        ]
+      },
+      {
         "image": "https://bsmedia.business-standard.com/media-handler.php?mediaPath=https://bsmedia.business-standard.com/_media/bs/img/article/2019-11/03/full/1572796865-0693.jpg&width=1200",
         "name": "TriangleQuiz",
         "techs": [
