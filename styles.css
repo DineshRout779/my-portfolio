@@ -346,6 +346,14 @@ li {
   box-shadow: 0 0 10px 0 rgb(241, 234, 234);
 }
 
+.blog p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
 .blog:hover {
   color: var(--white);
   background-color: var(--primary-light-blue);
