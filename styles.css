@@ -76,11 +76,8 @@ header {
   border-bottom: 1px solid rgb(221, 215, 215);
 }
 
-.logo h3 {
-  margin: 0;
-}
-
 .logo_text {
+  margin: 0;
   position: relative;
   display: inline-block;
 }
@@ -472,8 +469,7 @@ textarea {
   .about {
     flex-direction: row-reverse;
   }
-  .about,
-  .contact {
+  .about {
     display: flex;
     justify-content: space-between;
     align-items: center;
