@@ -1,4 +1,5 @@
 const menu = document.getElementById('menu');
+const menuBars = document.querySelectorAll('.menu_bar');
 const nav = document.querySelector('.nav');
 const nav_links = document.querySelectorAll('.nav_link');
 const levelZeroProjects = document.querySelector('.levelZero');
@@ -6,12 +7,32 @@ const personalProjects = document.querySelector('.personal');
 
 menu.addEventListener('click', () => {
   nav.classList.toggle('open');
+  if (nav.classList.contains('open')) {
+    applyMenuAnimation();
+  } else {
+    removeMenuAnimation();
+  }
 });
+
+const applyMenuAnimation = () => {
+  menuBars[0].style.transform = 'rotate(40deg)';
+  menuBars[1].style.transform = 'translate(-100vw)';
+  menuBars[1].style.opacity = 0;
+  menuBars[2].style.transform = 'rotate(-40deg)';
+};
+
+const removeMenuAnimation = () => {
+  menuBars[0].style.transform = 'rotate(0deg)';
+  menuBars[1].style.transform = 'translate(0%)';
+  menuBars[1].style.opacity = 1;
+  menuBars[2].style.transform = 'rotate(0deg)';
+};
 
 for (let i = 0; i < nav_links.length; i++) {
   nav_links[i].addEventListener('click', () => {
     if (nav.classList.contains('open')) {
       nav.classList.remove('open');
+      removeMenuAnimation();
     }
   });
 }
