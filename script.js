@@ -143,3 +143,25 @@ const createLevelZeroCards = (data, len = data[0].levelZero.length) => {
     levelZeroProjects.innerHTML += card;
   }
 };
+
+const themeToggleBtn = document.getElementById('checkbox');
+
+themeToggleBtn.addEventListener('change', () => {
+  if (themeToggleBtn.checked) {
+    console.log('true');
+    document.body.classList.add('dark-theme');
+    localStorage.setItem('theme', 'dark-theme');
+  } else {
+    console.log('false');
+    document.body.classList.remove('dark-theme');
+    localStorage.removeItem('theme');
+  }
+});
+
+window.addEventListener('load', () => {
+  var theme = window.localStorage.getItem('theme');
+  if (theme === 'dark-theme') {
+    document.body.classList.add(theme);
+    themeToggleBtn.checked = true;
+  }
+});
