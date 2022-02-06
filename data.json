@@ -2,16 +2,17 @@
   {
     "personal": [
       {
-        "image": "./images/blogapp.png",
-        "name": "BlogApp",
+        "image": "https://raw.githubusercontent.com/DineshRout779/social-media-react/main/public/assets/images/social-media.png",
+        "name": "Postline",
         "techs": [
           "Node.js",
           "Express",
-          "MySQL"
+          "MongoDB",
+          "React"
         ],
-        "live": "https://drblog.herokuapp.com/",
-        "github": "https://github.com/DineshRout779/BlogApp",
-        "finishedAt": "30/07/2021"
+        "live": "https://dns-social.netlify.app",
+        "github": "https://github.com/DineshRout779/postline",
+        "finishedAt": "02/02/2022"
       },
       {
         "image": "./images/notes-app.png",
@@ -55,42 +56,6 @@
         ],
         "live": "https://url-shortening-seven.vercel.app/",
         "github": "https://github.com/DineshRout779/URL-shortening",
-        "finishedAt": "30/07/2021"
-      },
-      {
-        "image": "./images/Room-Homepage.png",
-        "name": "Room Homepage",
-        "techs": [
-          "HTML",
-          "CSS",
-          "JS"
-        ],
-        "live": "https://room-homepage-challange-git-main-dineshrout779.vercel.app/",
-        "github": "https://github.com/DineshRout779/Room_Homepage_Challange",
-        "finishedAt": "30/07/2021"
-      },
-      {
-        "image": "./images/product-landing-page.png",
-        "name": "Product Landing page",
-        "techs": [
-          "HTML",
-          "CSS",
-          "JS"
-        ],
-        "live": "https://dinesh-pl.netlify.app/",
-        "github": "https://github.com/DineshRout779/Landing_Page",
-        "finishedAt": "30/07/2021"
-      },
-      {
-        "image": "./images/food.png",
-        "name": "Restaurant Website",
-        "techs": [
-          "HTML",
-          "CSS",
-          "JS"
-        ],
-        "live": "https://dinesh-food.netlify.app/",
-        "github": "https://github.com/DineshRout779/Food-website",
         "finishedAt": "30/07/2021"
       }
     ],
