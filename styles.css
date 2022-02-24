@@ -382,9 +382,18 @@ li {
 .cta_more {
   width: 150px;
   margin-bottom: 1.5em;
+  color: var(--primary-light-blue);
 }
 
-.cta_rev:hover {
+.cta_link {
+  transform: translateY(50px);
+  max-width: fit-content;
+  background-color: transparent;
+  color: var(--primary-light-blue);
+}
+
+.cta_rev:hover,
+.cta_link:hover {
   color: var(--white);
 }
 
