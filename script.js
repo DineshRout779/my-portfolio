@@ -148,11 +148,9 @@ const themeToggleBtn = document.getElementById('checkbox');
 
 themeToggleBtn.addEventListener('change', () => {
   if (themeToggleBtn.checked) {
-    console.log('true');
     document.body.classList.add('dark-theme');
     localStorage.setItem('theme', 'dark-theme');
   } else {
-    console.log('false');
     document.body.classList.remove('dark-theme');
     localStorage.removeItem('theme');
   }
