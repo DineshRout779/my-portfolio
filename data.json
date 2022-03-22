@@ -35,6 +35,16 @@
         "finishedAt": "30/07/2021"
       },
       {
+        "image": "./images/markdown.png",
+        "name": "Markdown Editor",
+        "techs": [
+          "React"
+        ],
+        "live": "https://e0rhwi.csb.app/",
+        "github": "https://github.com/DineshRout779/markdown-editor",
+        "finishedAt": "22/03/2022"
+      },
+      {
         "image": "./images/jsprojects.png",
         "name": "Mini Projects",
         "techs": [
