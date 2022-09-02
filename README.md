@@ -4,7 +4,7 @@ I am a frontend web developer with 1 year experience in technologies like HTML, 
 
 I'm currently learning MERN stack.
 
-You can find my all projects in my projects section of my [Portfolio](dineshrout.netlify.app/).
+You can find my all projects in my projects section of my [Portfolio](https://dineshrout.netlify.app).
 
 Connect with me.
 
