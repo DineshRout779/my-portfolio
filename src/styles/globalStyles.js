@@ -111,3 +111,23 @@ export const ButtonLink = styled(Link)`
   border-radius: 4px;
   color: white;
 `;
+
+// styled heading / section heading
+export const SectionTitle = styled.h1`
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+
+  /* &::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    background-color: var(--underline);
+    z-index: -1;
+  } */
+`;
