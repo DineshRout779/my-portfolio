@@ -1,5 +1,6 @@
 :root {
   --text-color: #242222;
+  --heading-color: #242222;
   --bg-color: #ccc;
   --bg-img: url('./assets/bg.jpg') no-repeat center center;
   --link-color: #333;
@@ -8,11 +9,13 @@
   --para-color: #111;
   --other-para-color: rgb(83, 78, 78);
   --accent-blue: #2563eb;
+  --underline: #fde860;
   box-sizing: border-box;
 }
 
 html[data-theme='dark'] {
   --text-color: #fff;
+  --heading-color: #fff;
   --bg-color: #1c1c1c;
   --bg-img: #02010e;
 
@@ -21,6 +24,8 @@ html[data-theme='dark'] {
   --link-hover-color: #fff;
   --para-color: #f7f2f2;
   --other-para-color: #ccc;
+
+  --underline: #2563eb;
 }
 
 *,
@@ -38,7 +43,15 @@ body {
   color: var(--text-color);
   min-height: 100vh;
   background: var(--bg-img);
+  background-attachment: fixed;
   line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--heading-color);
 }
 
 a {
