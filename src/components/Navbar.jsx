@@ -5,12 +5,15 @@ import { BsMoon, BsSun } from 'react-icons/bs';
 import { HiOutlineMenuAlt2 } from 'react-icons/hi';
 import { IoMdClose } from 'react-icons/io';
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import { useEffect } from 'react';
+import { gsap } from 'gsap';
 
 const Navbar = () => {
   const { state, dispatch } = useApp();
   const { theme } = state;
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const mobileMenuRef = useRef();
 
   const handleThemeToggle = () => {
     dispatch({
@@ -19,6 +22,21 @@ const Navbar = () => {
     });
   };
 
+  useEffect(() => {
+    const animation = gsap.fromTo(
+      mobileMenuRef.current.children,
+      { x: -300 },
+      {
+        x: 0,
+        stagger: 0.1,
+      }
+    );
+
+    return () => {
+      animation.kill();
+    };
+  });
+
   return (
     <Header>
       <Container>
@@ -26,24 +44,10 @@ const Navbar = () => {
           <HamburgerMenu onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <IoMdClose /> : <HiOutlineMenuAlt2 />}
           </HamburgerMenu>
-          <MobileNavLinks className={mobileMenuOpen ? 'open' : ''}>
-            {/* <li>
-              <NavLink
-                to='/'
-                className={({ isActive, isPending }) => {
-                  return isActive
-                    ? 'active logo'
-                    : isPending
-                    ? 'pending logo'
-                    : 'logo';
-                }}
-              >
-                <Logo
-                  src='./imgs/android-chrome-512x512.png'
-                  alt='logo image'
-                />
-              </NavLink>
-            </li> */}
+          <MobileNavLinks
+            className={mobileMenuOpen ? 'open' : ''}
+            ref={mobileMenuRef}
+          >
             <li>
               <NavLink
                 to='/'
@@ -210,11 +214,10 @@ const MobileNavLinks = styled.nav`
   li a {
     margin-right: 0;
     padding: 1em 0;
+    border-bottom: 1px solid gray;
     color: var(--link-color);
-    border-radius: 4px;
     text-decoration: none;
     display: block;
-    position: relative;
 
     :hover {
       color: var(--link-active-color);
