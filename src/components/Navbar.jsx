@@ -28,7 +28,7 @@ const Navbar = () => {
       { x: -300 },
       {
         x: 0,
-        stagger: 0.1,
+        stagger: 0.08,
       }
     );
 
@@ -38,7 +38,7 @@ const Navbar = () => {
   });
 
   return (
-    <Header>
+    <Header mobile={mobileMenuOpen}>
       <Container>
         <Nav>
           <HamburgerMenu onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -171,6 +171,9 @@ const Header = styled.header`
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  position: sticky;
+  top: 0;
+  background: var(--bg-img);
 `;
 
 const Logo = styled.img`
