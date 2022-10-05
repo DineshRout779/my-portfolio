@@ -38,7 +38,7 @@ export default Intro;
 
 const Wrapper = styled.div`
   padding: 2em 0;
-
+  margin: 2em 0;
   min-height: 50vh;
 
   @media (min-width: 768px) {
