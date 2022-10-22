@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 // main container
 export const Container = styled.div`
   width: 90%;
-  max-width: 672px;
+  max-width: 768px;
   margin: 0 auto;
 `;
 
@@ -105,11 +105,44 @@ export const NormalLink = styled.a`
 `;
 
 export const ButtonLink = styled(Link)`
-  background-color: #4c4ceb;
+  background-color: var(--accent-blue);
   text-decoration: none;
-  padding: 0.4em 1.2em;
+  padding: 0.6em 1.2em;
   border-radius: 4px;
   color: white;
+  display: flex;
+  width: fit-content;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -64px;
+    width: 32px;
+    height: 64px;
+    background-color: white;
+    opacity: 0.5;
+    filter: blur(10px);
+    transform: rotate(30deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  svg {
+    margin-left: 8px;
+  }
+
+  :hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  margin: 0 auto;
+  margin-bottom: 1em;
 `;
 
 // styled heading / section heading
@@ -119,6 +152,7 @@ export const SectionTitle = styled.h1`
   display: inline-block;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
+  margin-top: 1em;
 
   /* &::after {
     content: '';
