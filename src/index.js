@@ -9,6 +9,9 @@ import { AppContextProvider } from './context/AppContext';
 import Projects from './pages/Projects';
 import Blogs from './pages/Blogs';
 import Contact from './pages/Contact';
+import { QueryClient, QueryClientProvider } from 'react-query';
+
+const queryClient = new QueryClient();
 
 const router = createBrowserRouter([
   {
@@ -27,8 +30,10 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppContextProvider>
-      <RouterProvider router={router} />
-    </AppContextProvider>
+    <QueryClientProvider client={queryClient} contextSharing={true}>
+      <AppContextProvider>
+        <RouterProvider router={router} />
+      </AppContextProvider>
+    </QueryClientProvider>
   </React.StrictMode>
 );
