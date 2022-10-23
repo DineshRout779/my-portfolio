@@ -145,6 +145,23 @@ export const ButtonLink = styled(Link)`
   margin-bottom: 1em;
 `;
 
+export const TransparentButton = styled(Link)`
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 100px;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  color: var(--para-color);
+
+  svg {
+    margin-left: 8px;
+    font-size: 0.8em;
+  }
+`;
+
 // styled heading / section heading
 export const SectionTitle = styled.h1`
   font-weight: 600;
