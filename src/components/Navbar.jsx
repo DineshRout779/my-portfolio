@@ -14,6 +14,7 @@ const Navbar = () => {
   const { theme } = state;
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const mobileMenuRef = useRef();
+  const [bgBlur, setBgBlur] = useState(false);
 
   const handleThemeToggle = () => {
     dispatch({
@@ -28,7 +29,7 @@ const Navbar = () => {
       { x: -300 },
       {
         x: 0,
-        stagger: 0.08,
+        stagger: 0.02,
       }
     );
 
@@ -37,8 +38,18 @@ const Navbar = () => {
     };
   });
 
+  useEffect(() => {
+    document.addEventListener('scroll', () => {
+      if (window.scrollY > 150) {
+        setBgBlur(true);
+      } else {
+        setBgBlur(false);
+      }
+    });
+  }, []);
+
   return (
-    <Header mobile={mobileMenuOpen}>
+    <Header mobile={mobileMenuOpen} bgBlur={bgBlur}>
       <Container>
         <Nav>
           <HamburgerMenu onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -173,7 +184,8 @@ const Header = styled.header`
   z-index: 1000;
   position: sticky;
   top: 0;
-  background: var(--bg-img);
+  background-color: ${(props) => props.bgBlur && 'var(--bg-blur)'};
+  backdrop-filter: ${(props) => props.bgBlur && 'blur(10px)'};
 `;
 
 const Logo = styled.img`
@@ -205,8 +217,8 @@ const MobileNavLinks = styled.nav`
   width: 100%;
   z-index: 1000;
   min-height: 88vh;
-  background-color: var(--bg-img);
-  backdrop-filter: blur(100px);
+  background-color: var(--bg-color);
+  backdrop-filter: blur(10px);
   display: none;
   padding: 0 5%;
 
