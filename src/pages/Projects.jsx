@@ -1,13 +1,8 @@
 import ProjectList from '../components/ProjectList';
 import { data } from '../data';
-import { Container } from '../styles/globalStyles';
 
 const Projects = () => {
   const { projects } = data;
-  return (
-    <Container>
-      <ProjectList projects={projects} />
-    </Container>
-  );
+  return <ProjectList projects={projects} />;
 };
 export default Projects;
