@@ -15,7 +15,7 @@ const data = [
   },
   {
     id: 2,
-    company: 'IIT Delhi, IRD Dept.',
+    company: 'IIT Delhi',
     role: 'Full-stack Developer',
     fromDate: 'Aug 2022',
     toDate: 'Oct 2022',
@@ -32,7 +32,8 @@ const Experience = () => {
       { y: 200, opacity: 0 },
       { y: 0, opacity: 1, duration: 0.8 }
     );
-  });
+  }, []);
+
   return (
     <Container ref={wrapperRef}>
       <SectionTitle>Work Experience</SectionTitle>
