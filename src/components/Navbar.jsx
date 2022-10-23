@@ -40,7 +40,7 @@ const Navbar = () => {
 
   useEffect(() => {
     document.addEventListener('scroll', () => {
-      if (window.scrollY > 150) {
+      if (window.scrollY > 100) {
         setBgBlur(true);
       } else {
         setBgBlur(false);
@@ -229,7 +229,7 @@ const MobileNavLinks = styled.nav`
   li a {
     margin-right: 0;
     padding: 1em 0;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--line);
     color: var(--link-color);
     text-decoration: none;
     display: block;

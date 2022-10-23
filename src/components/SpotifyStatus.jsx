@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { useState } from 'react';
 import { BsSpotify } from 'react-icons/bs';
 import styled from 'styled-components';
@@ -8,35 +7,29 @@ const SpotifyStatus = () => {
   const [song, setSong] = useState(null);
   const [isPlaying, setisPlaying] = useState(false);
 
-  useEffect(() => {
-    const getCurrentSong = async () => {
-      try {
-        let res = await fetch(
-          'https://api.spotify.com/v1/me/player/currently-playing?market=ES',
-          {
-            method: 'GET',
-            headers: {
-              'Content-Type': 'application/json',
-              Authorization:
-                'Bearer BQC_i6UZotCwsNQTb1pkHwCo_v_KalDSsJvYpUbW4PVXjkLh42x-TCF2GsBWDPSu4u0VUZfr9Ph7netFvkRv34vkODSVME0Yaug5IJFclihr-yLVbfnSy0ok3LNxtnkvQMT8DvdFxCwgef3kfQ52ypzrX40LzEfOA_kiX6392gOAai8GcKu8_hnWgHYrZpRI8YQfhndQ',
-            },
-          }
-        );
-        const data = await res.json();
+  console.log(song);
 
-        setisPlaying(data.is_playing);
+  // useEffect(() => {
+  //   const getCurrentSong = async () => {
+  //     try {
 
-        setSong({
-          title: data?.item.name,
-          artist: data?.item.artists[0].name,
-          coverImg: data?.item?.album?.images[1].url,
-        });
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    getCurrentSong();
-  }, []);
+  //       const data = await res.json();
+
+  //       console.log('Data: ', data);
+
+  //       // setisPlaying(data.is_playing);
+
+  //       // setSong({
+  //       //   title: data?.item.name,
+  //       //   artist: data?.item.artists[0].name,
+  //       //   coverImg: data?.item?.album?.images[1].url,
+  //       // });
+  //     } catch (err) {
+  //       console.log(err);
+  //     }
+  //   };
+  //   getCurrentSong();
+  // }, []);
 
   if (!isPlaying) {
     return (
