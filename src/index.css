@@ -1,31 +1,41 @@
 :root {
   --text-color: #242222;
   --heading-color: #242222;
-  --bg-color: #ccc;
+  --bg-color: rgb(255, 255, 255);
+  --bg-card: rgba(255, 255, 255, 0.48);
   --bg-img: url('./assets/bg.jpg') no-repeat center center;
+  --bg-blur: rgba(255, 255, 255, 0.2);
   --link-color: #333;
   --link-active-color: #2563eb;
   --link-hover-color: #2563eb;
   --para-color: #111;
   --other-para-color: rgb(83, 78, 78);
-  --accent-blue: #2563eb;
+  --accent-blue: #2167e9;
   --underline: #fde860;
+  --shadow: 0 0 10px 2px #f4ecec6f;
+  --line: #ffecec;
   box-sizing: border-box;
 }
 
 html[data-theme='dark'] {
   --text-color: #fff;
   --heading-color: #fff;
-  --bg-color: #1c1c1c;
+  --bg-color: #02010e;
+  --bg-card: #181718a8;
   --bg-img: #02010e;
-
+  --bg-blur: rgba(0, 0, 0, 0.2);
   --link-color: #a39e9e;
   --link-active-color: #fff;
   --link-hover-color: #fff;
   --para-color: #f7f2f2;
   --other-para-color: #ccc;
-
+  --shadow: 0 0 1px 1px #121224;
+  --line: #131214;
   --underline: #2563eb;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 *,
@@ -68,6 +78,11 @@ a.logo:first-of-type::after {
 
 p {
   color: var(--para-color);
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 .container {
@@ -128,4 +143,56 @@ p {
 
 .theme-checkbox:checked + .theme-label .ball {
   transform: translateX(1.5em);
+}
+
+section h1 {
+  font-size: 2em;
+}
+
+/* spinner */
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #2167e9;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
 }
