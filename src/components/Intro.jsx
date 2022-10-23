@@ -5,6 +5,7 @@ import { useRef } from 'react';
 import { useEffect } from 'react';
 import me from '../assets/me.jpg';
 import { FiDownload } from 'react-icons/fi';
+import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
 
 const Intro = () => {
   const wrapperRef = useRef();
@@ -15,12 +16,12 @@ const Intro = () => {
       { y: 200, opacity: 0 },
       { y: 0, opacity: 1, duration: 0.8 }
     );
-  });
+  }, []);
 
   return (
     <Container>
       <Wrapper ref={wrapperRef}>
-        <MyImg src={me} alt='Dinesh Rout' />
+        <MyImg src={me} alt='Dinesh Rout' loading='lazy' />
         <Description>
           <Heading>Dinesh Rout</Heading>
           <Title>Aspiring Full-stack Developer</Title>
@@ -28,6 +29,17 @@ const Intro = () => {
           <NormalLink href='https://drive.google.com/file/d/1FHQHDKvL5ZVA1tqML_kecu7soyyQrF7j/view?usp=sharing'>
             Donwload Resume <FiDownload />
           </NormalLink>
+          <IconsWrapper>
+            <Icon href=''>
+              <BsGithub />
+            </Icon>
+            <Icon href=''>
+              <BsLinkedin />
+            </Icon>
+            <Icon href=''>
+              <BsTwitter />
+            </Icon>
+          </IconsWrapper>
         </Description>
       </Wrapper>
     </Container>
@@ -73,6 +85,7 @@ const Title = styled.p`
 const Bio = styled.p`
   color: var(--other-para-color);
   font-size: 0.9em;
+  margin-bottom: 1em;
 `;
 
 const MyImg = styled.img`
@@ -84,5 +97,24 @@ const MyImg = styled.img`
   @media (max-width: 768px) {
     margin-bottom: 1.5em;
     max-width: 80px;
+  }
+`;
+
+const IconsWrapper = styled.div`
+  display: flex;
+  gap: 8px;
+  margin-top: 1em;
+`;
+
+const Icon = styled.a`
+  color: var(--para-color);
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4em;
+
+  :hover {
+    color: var(--accent-blue);
   }
 `;
