@@ -1,37 +1,34 @@
-import { useState } from 'react';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 import { BsSpotify } from 'react-icons/bs';
 import styled from 'styled-components';
 import { Container } from '../styles/globalStyles';
 
+const API_URL = process.env.REACT_APP_API;
+
 const SpotifyStatus = () => {
   const [song, setSong] = useState(null);
-  const [isPlaying, setisPlaying] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
-  console.log(song);
+  useEffect(() => {
+    const getCurrentTrack = async () => {
+      try {
+        setIsLoading(true);
+        const { data } = await axios.get(`${API_URL}/getCurrentTrack`);
 
-  // useEffect(() => {
-  //   const getCurrentSong = async () => {
-  //     try {
+        const { isPlaying, ...songData } = data;
 
-  //       const data = await res.json();
+        setSong(songData.song);
+        setIsLoading(false);
+      } catch (error) {
+        setIsLoading(false);
+        console.log(error);
+      }
+    };
+    getCurrentTrack();
+  }, []);
 
-  //       console.log('Data: ', data);
-
-  //       // setisPlaying(data.is_playing);
-
-  //       // setSong({
-  //       //   title: data?.item.name,
-  //       //   artist: data?.item.artists[0].name,
-  //       //   coverImg: data?.item?.album?.images[1].url,
-  //       // });
-  //     } catch (err) {
-  //       console.log(err);
-  //     }
-  //   };
-  //   getCurrentSong();
-  // }, []);
-
-  if (!isPlaying) {
+  if (!song || isLoading) {
     return (
       <Container>
         <div
@@ -59,10 +56,10 @@ const SpotifyStatus = () => {
         </SpotifyHeader>
 
         <SongInfo>
-          <img src={song?.coverImg} alt={song?.title} />
+          <img src={song.albumImageUrl} alt={song.title} />
           <div>
-            <h3>{song?.title}</h3>
-            <p>by {song?.artist}</p>
+            <h3>{song.title}</h3>
+            <p>by {song.artist}</p>
           </div>
         </SongInfo>
       </SpotifyWrapper>
@@ -81,7 +78,7 @@ const SpotifyHeader = styled.div`
   gap: 8px;
 `;
 
-const SongInfo = styled.div`
+const SongInfo = styled.a`
   display: flex;
   margin: 1em 0;
 
