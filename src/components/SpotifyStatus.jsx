@@ -1,44 +1,34 @@
-import { useEffect } from 'react';
-import { useState } from 'react';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 import { BsSpotify } from 'react-icons/bs';
 import styled from 'styled-components';
 import { Container } from '../styles/globalStyles';
 
+const API_URL = process.env.REACT_APP_API;
+
 const SpotifyStatus = () => {
   const [song, setSong] = useState(null);
-  const [isPlaying, setisPlaying] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const getCurrentSong = async () => {
+    const getCurrentTrack = async () => {
       try {
-        let res = await fetch(
-          'https://api.spotify.com/v1/me/player/currently-playing?market=ES',
-          {
-            method: 'GET',
-            headers: {
-              'Content-Type': 'application/json',
-              Authorization:
-                'Bearer BQC_i6UZotCwsNQTb1pkHwCo_v_KalDSsJvYpUbW4PVXjkLh42x-TCF2GsBWDPSu4u0VUZfr9Ph7netFvkRv34vkODSVME0Yaug5IJFclihr-yLVbfnSy0ok3LNxtnkvQMT8DvdFxCwgef3kfQ52ypzrX40LzEfOA_kiX6392gOAai8GcKu8_hnWgHYrZpRI8YQfhndQ',
-            },
-          }
-        );
-        const data = await res.json();
+        setIsLoading(true);
+        const { data } = await axios.get(`${API_URL}/getCurrentTrack`);
 
-        setisPlaying(data.is_playing);
+        const { isPlaying, ...songData } = data;
 
-        setSong({
-          title: data?.item.name,
-          artist: data?.item.artists[0].name,
-          coverImg: data?.item?.album?.images[1].url,
-        });
-      } catch (err) {
-        console.log(err);
+        setSong(songData.song);
+        setIsLoading(false);
+      } catch (error) {
+        setIsLoading(false);
+        console.log(error);
       }
     };
-    getCurrentSong();
+    getCurrentTrack();
   }, []);
 
-  if (!isPlaying) {
+  if (!song || isLoading) {
     return (
       <Container>
         <div
@@ -66,10 +56,10 @@ const SpotifyStatus = () => {
         </SpotifyHeader>
 
         <SongInfo>
-          <img src={song?.coverImg} alt={song?.title} />
+          <img src={song.albumImageUrl} alt={song.title} />
           <div>
-            <h3>{song?.title}</h3>
-            <p>by {song?.artist}</p>
+            <h3>{song.title}</h3>
+            <p>by {song.artist}</p>
           </div>
         </SongInfo>
       </SpotifyWrapper>
@@ -88,7 +78,7 @@ const SpotifyHeader = styled.div`
   gap: 8px;
 `;
 
-const SongInfo = styled.div`
+const SongInfo = styled.a`
   display: flex;
   margin: 1em 0;
 
