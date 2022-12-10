@@ -9,7 +9,8 @@
   --link-active-color: #2563eb;
   --link-hover-color: #2563eb;
   --para-color: #111;
-  --other-para-color: rgb(83, 78, 78);
+  --para-gray-color: #3c3838;
+  --other-para-color: #534e4e;
   --accent-blue: #2167e9;
   --underline: #fde860;
   --shadow: 0 0 10px 2px #f4ecec6f;
@@ -28,6 +29,7 @@ html[data-theme='dark'] {
   --link-active-color: #fff;
   --link-hover-color: #fff;
   --para-color: #f7f2f2;
+  --para-gray-color: #bcafaf;
   --other-para-color: #ccc;
   --shadow: 0 0 1px 1px #121224;
   --line: #131214;
