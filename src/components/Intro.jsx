@@ -30,13 +30,16 @@ const Intro = () => {
             Donwload Resume <FiDownload />
           </NormalLink>
           <IconsWrapper>
-            <Icon href=''>
+            <Icon href='https://github.com/DineshRout779' target='_blank'>
               <BsGithub />
             </Icon>
-            <Icon href=''>
+            <Icon
+              href='https://www.linkedin.com/in/dineshrout7/'
+              target='_blank'
+            >
               <BsLinkedin />
             </Icon>
-            <Icon href=''>
+            <Icon href='https://twitter.com/DineshRout779' target='_blank'>
               <BsTwitter />
             </Icon>
           </IconsWrapper>

@@ -11,7 +11,12 @@ const data = [
     role: 'Frontend Developer Intern',
     fromDate: 'Apr 2022',
     toDate: 'July 2022',
-    tasks: ['Managed the frontend of the application'],
+    tasks: [
+      'Built an QnA forum application',
+      'Updated interfaces, fixed bugs',
+      'Implemented new features',
+      'Collaborated with backend devs to integrate the frontend with APIs',
+    ],
   },
   {
     id: 2,
@@ -19,7 +24,11 @@ const data = [
     role: 'Full-stack Developer',
     fromDate: 'Aug 2022',
     toDate: 'Oct 2022',
-    tasks: ['Managed the frontend of the application'],
+    tasks: [
+      'Worked on an annotation tool',
+      'Implemented features in both frontend and backend',
+      'Fixed bugs in the frontend application',
+    ],
   },
 ];
 
@@ -118,4 +127,8 @@ const ExperieceHeader = styled.div`
 
 const TaskList = styled.ul`
   list-style-type: circle;
+
+  li {
+    color: var(--para-gray-color);
+  }
 `;
