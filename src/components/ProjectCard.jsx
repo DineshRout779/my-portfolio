@@ -46,7 +46,9 @@ const CardTitle = styled.h2`
   color: var(--heading-color);
 `;
 
-const CardDesc = styled.small``;
+const CardDesc = styled.small`
+  color: var(--para-gray-color);
+`;
 
 const CardLinks = styled.div`
   display: flex;

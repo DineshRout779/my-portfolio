@@ -73,7 +73,7 @@ export default ProjectList;
 const ProjectsWrapper = styled.div`
   margin: 2em 0;
   display: grid;
-  grid-gap: 1em;
+  grid-gap: 1.5em;
   grid-template-columns: repeat(3, 1fr);
 
   @media (max-width: 768px) {
