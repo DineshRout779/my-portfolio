@@ -8,9 +8,9 @@ const data = [
   {
     id: 1,
     company: 'Cryptonaukri',
-    role: 'Frontend Developer Intern',
-    fromDate: 'Apr 2022',
-    toDate: 'July 2022',
+    role: 'Software Developer Intern',
+    fromDate: new Date('2022-04-04'),
+    toDate: new Date('2022-07-04'),
     tasks: [
       'Built an QnA forum application',
       'Updated interfaces, fixed bugs',
@@ -22,18 +22,52 @@ const data = [
     id: 2,
     company: 'IIT Delhi',
     role: 'Full-stack Developer',
-    fromDate: 'Aug 2022',
-    toDate: 'Oct 2022',
+    fromDate: new Date('2022-08-24'),
+    toDate: new Date('2022-10-24'),
     tasks: [
       'Worked on an annotation tool',
       'Implemented features in both frontend and backend',
       'Fixed bugs in the frontend application',
     ],
   },
+  {
+    id: 3,
+    company: 'CollegeToppr',
+    role: 'Software Developer Intern',
+    fromDate: new Date('2022-11-07'),
+    toDate: new Date('2023-05-07'),
+    tasks: [
+      'Built more than 50+ client projects from landing pages to full-stack web applications',
+      'Worked on both the frontend and backend technologies',
+    ],
+  },
+];
+
+const months = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
 ];
 
 const Experience = () => {
   const wrapperRef = useRef();
+
+  function monthDiff(dateFrom, dateTo) {
+    return (
+      dateTo.getMonth() -
+      dateFrom.getMonth() +
+      12 * (dateTo.getFullYear() - dateFrom.getFullYear())
+    );
+  }
 
   useEffect(() => {
     gsap.fromTo(
@@ -48,25 +82,33 @@ const Experience = () => {
       <SectionTitle>Work Experience</SectionTitle>
 
       <TimeLine>
-        {data.map((ex) => (
-          <TimeLineItem key={ex.id}>
-            <ExperieceHeader>
-              <h3>
-                {ex.role}, {ex.company}
-              </h3>
+        {data
+          .sort((a, b) => b.fromDate.getTime() - a.fromDate.getTime())
+          .map((ex) => (
+            <TimeLineItem key={ex.id}>
+              <ExperieceHeader>
+                <h3>
+                  {ex.role}, {ex.company}
+                </h3>
 
-              <small>
-                {ex.fromDate} - {ex.toDate} (3 months)
-              </small>
-            </ExperieceHeader>
+                <small>
+                  {months[ex.fromDate.getMonth()] +
+                    ' ' +
+                    ex.fromDate.getFullYear()}{' '}
+                  -{' '}
+                  {months[ex.toDate.getMonth()] + ' ' + ex.toDate.getFullYear()}{' '}
+                  ({monthDiff(ex.fromDate, ex.toDate)}{' '}
+                  {monthDiff(ex.fromDate, ex.toDate) > 1 ? 'Months' : 'Month'})
+                </small>
+              </ExperieceHeader>
 
-            <TaskList>
-              {ex.tasks.map((task, i) => (
-                <li key={i}>{task}</li>
-              ))}
-            </TaskList>
-          </TimeLineItem>
-        ))}
+              <TaskList>
+                {ex.tasks.map((task, i) => (
+                  <li key={i}>{task}</li>
+                ))}
+              </TaskList>
+            </TimeLineItem>
+          ))}
       </TimeLine>
     </Container>
   );
