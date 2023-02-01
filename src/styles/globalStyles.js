@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { keyframes } from 'styled-components';
 
 // main container
 export const Container = styled.div`
@@ -66,6 +67,17 @@ export const NavLinks = styled.ul`
   }
 `;
 
+const swipe = keyframes`
+ 0% {
+    left: -64px;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  100% {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+`;
+
 export const NormalLink = styled.a`
   background-color: var(--accent-blue);
   text-decoration: none;
@@ -92,6 +104,9 @@ export const NormalLink = styled.a`
     filter: blur(10px);
     transform: rotate(30deg);
     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    /* animation-name: ${swipe};
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
   }
 
   svg {
@@ -102,6 +117,47 @@ export const NormalLink = styled.a`
     left: 120%;
     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
   }
+`;
+
+export const HighlightedLink = styled.a`
+  background-color: var(--accent-blue);
+  text-decoration: none;
+  padding: 0.6em 1.2em;
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  width: fit-content;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -64px;
+    width: 32px;
+    height: 64px;
+    background-color: white;
+    opacity: 0.5;
+    filter: blur(10px);
+    transform: rotate(30deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    animation-name: ${swipe};
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  svg {
+    margin-left: 8px;
+  }
+
+  /* :hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  } */
 `;
 
 export const ButtonLink = styled(Link)`

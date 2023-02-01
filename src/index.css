@@ -4,7 +4,7 @@
   --bg-color: rgb(255, 255, 255);
   --bg-card: rgba(255, 255, 255, 0.48);
   --bg-img: url('./assets/bg.jpg') no-repeat center center;
-  --bg-blur: rgba(255, 255, 255, 0.2);
+  --bg-blur: #ffffff5d;
   --link-color: #333;
   --link-active-color: #2563eb;
   --link-hover-color: #2563eb;
@@ -23,8 +23,8 @@ html[data-theme='dark'] {
   --heading-color: #fff;
   --bg-color: #02010e;
   --bg-card: #181718a8;
-  --bg-img: #02010e;
-  --bg-blur: rgba(0, 0, 0, 0.2);
+  --bg-img: #010011;
+  --bg-blur: rgba(0, 0, 0, 0);
   --link-color: #a39e9e;
   --link-active-color: #fff;
   --link-hover-color: #fff;

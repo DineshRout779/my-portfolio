@@ -174,6 +174,7 @@ const Navbar = () => {
     </Header>
   );
 };
+
 export default Navbar;
 
 const Header = styled.header`
@@ -186,6 +187,8 @@ const Header = styled.header`
   top: 0;
   background-color: ${(props) => props.bgBlur && 'var(--bg-blur)'};
   backdrop-filter: ${(props) => props.bgBlur && 'blur(10px)'};
+  border-bottom: ${(props) =>
+    props.bgBlur ? '1px solid #cbd5e11a' : '1px solid transparent'};
 `;
 
 const Logo = styled.img`
