@@ -49,7 +49,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <Header mobile={mobileMenuOpen} bgBlur={bgBlur}>
+    <Header mobile={mobileMenuOpen} bgBlur={bgBlur} theme={theme}>
       <Container>
         <Nav>
           <HamburgerMenu onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -174,6 +174,7 @@ const Navbar = () => {
     </Header>
   );
 };
+
 export default Navbar;
 
 const Header = styled.header`
@@ -185,7 +186,13 @@ const Header = styled.header`
   position: sticky;
   top: 0;
   background-color: ${(props) => props.bgBlur && 'var(--bg-blur)'};
-  backdrop-filter: ${(props) => props.bgBlur && 'blur(10px)'};
+  backdrop-filter: ${(props) => props.bgBlur && 'blur(20px)'};
+  border-bottom: ${(props) =>
+    props.bgBlur
+      ? props.theme === 'dark'
+        ? '1px solid #cbd5e11a'
+        : '1px solid #0f172a1a'
+      : '1px solid transparent'};
 `;
 
 const Logo = styled.img`

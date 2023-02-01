@@ -1,9 +1,10 @@
 import styled from 'styled-components';
-import { Container, NormalLink } from '../styles/globalStyles';
+import { Container, HighlightedLink } from '../styles/globalStyles';
 import { gsap } from 'gsap';
 import { useRef } from 'react';
 import { useEffect } from 'react';
 import me from '../assets/me.jpg';
+import resume from '../assets/dinesh_resume.pdf';
 import { FiDownload } from 'react-icons/fi';
 import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
 
@@ -25,10 +26,10 @@ const Intro = () => {
         <Description>
           <Heading>Dinesh Rout</Heading>
           <Title>Aspiring Full-stack Developer</Title>
-          <Bio>Passionate about tech and startups | Life long learner 🤓</Bio>
-          <NormalLink href='https://drive.google.com/file/d/1FHQHDKvL5ZVA1tqML_kecu7soyyQrF7j/view?usp=sharing'>
+          <Bio>Passionate about Technoloy and Startups | Life long learner</Bio>
+          <HighlightedLink href={resume} download='Dinesh_resume'>
             Donwload Resume <FiDownload />
-          </NormalLink>
+          </HighlightedLink>
           <IconsWrapper>
             <Icon href='https://github.com/DineshRout779' target='_blank'>
               <BsGithub />
