@@ -25,7 +25,7 @@ const Intro = () => {
         <MyImg src={me} alt='Dinesh Rout' loading='lazy' />
         <Description>
           <Heading>Dinesh Rout</Heading>
-          <Title>Aspiring Full-stack Developer</Title>
+          <Title>Full-stack Developer</Title>
           <Bio>Passionate about Technoloy and Startups | Life long learner</Bio>
           <HighlightedLink href={resume} download='Dinesh_resume'>
             Donwload Resume <FiDownload />
