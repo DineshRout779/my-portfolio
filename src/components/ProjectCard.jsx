@@ -12,10 +12,17 @@ const ProjectCard = ({ project }) => {
         <CardDesc>{project.desc}</CardDesc>
 
         <CardLinks>
-          <CardLink href={project.github}>
-            Source <FaGithub />
-          </CardLink>
-          <CardLink href={project.live} primary>
+          {project.github && (
+            <CardLink href={project.github} target='_blank' rel='noreferrer'>
+              Source <FaGithub />
+            </CardLink>
+          )}
+          <CardLink
+            href={project.live}
+            primary
+            target='_blank'
+            rel='noreferrer'
+          >
             Live <HiOutlineExternalLink />
           </CardLink>
         </CardLinks>

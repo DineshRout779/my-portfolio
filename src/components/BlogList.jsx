@@ -13,8 +13,6 @@ import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { useRef } from 'react';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
 
 const endpoint = 'https://api.hashnode.com/';
 const ARTICLE_QUERY = `
@@ -61,26 +59,11 @@ const BlogList = () => {
   };
 
   useEffect(() => {
-    revealRefs.current.forEach((el, index) => {
-      gsap.fromTo(
-        el,
-        {
-          opacity: 0,
-        },
-        {
-          duration: 1,
-          stagger: 0.3,
-          opacity: 1,
-          ease: 'none',
-          scrollTrigger: {
-            id: `section-${index + 1}`,
-            trigger: el,
-            start: 'top center+=100',
-            toggleActions: 'play none none reverse',
-          },
-        }
-      );
-    });
+    gsap.fromTo(
+      wrapperRef.current,
+      { y: 200, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.8 }
+    );
   }, []);
 
   if (isLoading)
