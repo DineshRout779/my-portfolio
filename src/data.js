@@ -2,7 +2,7 @@ const projects = [
   {
     id: 1,
     title: 'Postline',
-    img: '/imgs/projects/postline.png',
+    img: '/imgs/projects/postline.webp',
     desc: 'Social Media App where users can interact with each other through posts ',
     technologies: ['React.js', 'Node.js', 'mongodb', 'Express'],
     github: 'https://github.com/DineshRout779/postline',
@@ -11,7 +11,7 @@ const projects = [
   // {
   //   id: 2,
   //   title: 'Blogbee',
-  //   img: '/imgs/projects/blogbee.png',
+  //   img: '/imgs/projects/blogbee.webp',
   //   desc: 'A blogging Web Application where one can publish and read blogs 📖',
   //   technologies: ['React.js', 'Node.js', 'mongodb', 'Express'],
   //   github: 'https://github.com/DineshRout779/postline',
@@ -20,7 +20,7 @@ const projects = [
   {
     id: 3,
     title: 'Jobify',
-    img: '/imgs/projects/jobify.png',
+    img: '/imgs/projects/jobify.webp',
     desc: 'App that helps companies and candidates create and apply for jobs respectively',
     technologies: ['React.js', 'Node.js', 'mongodb', 'Express'],
     github: 'https://github.com/DineshRout779/jobify',
@@ -39,7 +39,7 @@ const projects = [
   {
     id: 6,
     title: 'Notes App',
-    img: '/imgs/projects/notes.png',
+    img: '/imgs/projects/notes.webp',
     desc: 'A notes app where one can add quick notes on the go. Data is saved locally.',
     technologies: ['React.js'],
     github: 'https://github.com/DineshRout779/react-notes-app',
@@ -48,7 +48,7 @@ const projects = [
   {
     id: 7,
     title: 'Weather App',
-    img: '/imgs/projects/weather.png',
+    img: '/imgs/projects/weather.webp',
     desc: 'A weather app that tells weather details based on search query (city, state, etc)',
     technologies: ['React.js'],
     github: 'https://github.com/DineshRout779/weather-App',
@@ -57,7 +57,7 @@ const projects = [
   {
     id: 8,
     title: 'Triangle Quiz',
-    img: '/imgs/projects/triangle.png',
+    img: '/imgs/projects/triangle.webp',
     desc: 'How much  do  you know  about triangles 🔺? Test your skills.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/DineshRout779/levelZero-triangleQuiz',
@@ -66,7 +66,7 @@ const projects = [
   {
     id: 9,
     title: 'URL Shortener',
-    img: '/imgs/projects/url.png',
+    img: '/imgs/projects/url.webp',
     desc: 'An app that helps to shorten URL with ease.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/DineshRout779/URL-shortening',
@@ -75,7 +75,7 @@ const projects = [
   {
     id: 10,
     title: 'Mini JS Projects',
-    img: '/imgs/projects/mini-js.png',
+    img: '/imgs/projects/mini-js.webp',
     desc: 'Collection of all mini JavaScript projects',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/DineshRout779/Javascript-Projects',
@@ -84,7 +84,7 @@ const projects = [
   {
     id: 5,
     title: 'Zigbee',
-    img: 'https://shrtco.de/1eXuKm',
+    img: '/imgs/projects/zigbee.webp',
     desc: 'A website for student developers club, MCA, OUTR.',
     technologies: ['Next.js', 'TypeScript', 'ChakraUI'],
     github: null,
