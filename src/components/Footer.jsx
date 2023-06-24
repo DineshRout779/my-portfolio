@@ -36,17 +36,17 @@ const Footer = () => {
             <SiteRouterLink to='/contact'>Contact</SiteRouterLink>
           </Col>
         </Row>
-        <Attribution>
-          Made with <AiFillHeart color='yellow' /> by{' '}
-          <a
-            href='https://github.com/DineshRout779'
-            rel='noreferrer'
-            target='_blank'
-          >
-            Dinesh Rout
-          </a>
-        </Attribution>
       </FooterWrapper>
+      <Attribution>
+        Made with <AiFillHeart color='yellow' /> by{' '}
+        <a
+          href='https://github.com/DineshRout779'
+          rel='noreferrer'
+          target='_blank'
+        >
+          Dinesh Rout
+        </a>
+      </Attribution>
     </Container>
   );
 };

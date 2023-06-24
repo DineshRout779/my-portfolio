@@ -35,8 +35,9 @@ export default ProjectCard;
 
 const Card = styled.article`
   background: var(--bg-card);
+
   backdrop-filter: blur(22px);
-  box-shadow: var(--shadow);
+  /* box-shadow: var(--shadow); */
   border-radius: 6px;
   overflow: hidden;
 `;

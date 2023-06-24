@@ -1,51 +1,47 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { Container, HighlightedLink } from '../styles/globalStyles';
-import { gsap } from 'gsap';
-import { useRef } from 'react';
-import { useEffect } from 'react';
 import me from '../assets/me.jpg';
-import resume from '../assets/dinesh_resume.pdf';
+import resume from '../assets/DineshRout_resume.pdf';
 import { FiDownload } from 'react-icons/fi';
 import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
 
 const Intro = () => {
-  const wrapperRef = useRef();
-
-  useEffect(() => {
-    gsap.fromTo(
-      wrapperRef.current,
-      { y: 200, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.8 }
-    );
-  }, []);
-
   return (
     <Container>
-      <Wrapper ref={wrapperRef}>
-        <MyImg src={me} alt='Dinesh Rout' loading='lazy' />
-        <Description>
-          <Heading>Dinesh Rout</Heading>
-          <Title>Full-stack Developer</Title>
-          <Bio>Passionate about Technoloy and Startups | Life long learner</Bio>
-          <HighlightedLink href={resume} download='Dinesh_resume'>
-            Download Resume <FiDownload />
-          </HighlightedLink>
-          <IconsWrapper>
-            <Icon href='https://github.com/DineshRout779' target='_blank'>
-              <BsGithub />
-            </Icon>
-            <Icon
-              href='https://www.linkedin.com/in/dineshrout7/'
-              target='_blank'
-            >
-              <BsLinkedin />
-            </Icon>
-            <Icon href='https://twitter.com/DineshRout779' target='_blank'>
-              <BsTwitter />
-            </Icon>
-          </IconsWrapper>
-        </Description>
-      </Wrapper>
+      <motion.div
+        initial={{ opacity: 0, y: 300 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Wrapper>
+          <MyImg src={me} alt='Dinesh Rout' loading='lazy' />
+          <Description>
+            <Heading>Dinesh Rout</Heading>
+            <Title>Frontend Developer</Title>
+            <Bio>
+              Passionate about Technoloy and Startups | Life long learner
+            </Bio>
+            <HighlightedLink href={resume} target='_blank'>
+              Donwload Resume <FiDownload />
+            </HighlightedLink>
+            <IconsWrapper>
+              <Icon href='https://github.com/DineshRout779' target='_blank'>
+                <BsGithub />
+              </Icon>
+              <Icon
+                href='https://www.linkedin.com/in/dineshrout7/'
+                target='_blank'
+              >
+                <BsLinkedin />
+              </Icon>
+              <Icon href='https://twitter.com/DineshRout779' target='_blank'>
+                <BsTwitter />
+              </Icon>
+            </IconsWrapper>
+          </Description>
+        </Wrapper>
+      </motion.div>
     </Container>
   );
 };

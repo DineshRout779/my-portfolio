@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import {
   Container,
   SectionTitle,
@@ -10,9 +11,6 @@ import BlogCard from './BlogCard';
 import Spinner from './Spinner';
 import { BsChevronDown } from 'react-icons/bs';
 import { useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
-import { gsap } from 'gsap';
-import { useRef } from 'react';
 
 const endpoint = 'https://api.hashnode.com/';
 const ARTICLE_QUERY = `
@@ -33,6 +31,26 @@ const ARTICLE_QUERY = `
 
 `;
 
+const container = {
+  hidden: { opacity: 0, y: 300 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delayChildren: 0.5,
+      staggerChildren: 0.2,
+    },
+  },
+  transition: 0.5,
+};
+
+const item = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+  },
+};
+
 const BlogList = () => {
   const {
     data: blogsData,
@@ -48,23 +66,6 @@ const BlogList = () => {
     }).then((response) => response.data.data);
   });
   const { pathname } = useLocation();
-  const wrapperRef = useRef();
-  const revealRefs = useRef([]);
-  revealRefs.current = [];
-
-  const addToRefs = (el) => {
-    if (el && !revealRefs.current.includes(el)) {
-      revealRefs.current.push(el);
-    }
-  };
-
-  useEffect(() => {
-    gsap.fromTo(
-      wrapperRef.current,
-      { y: 200, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.8 }
-    );
-  }, []);
 
   if (isLoading)
     return (
@@ -77,16 +78,31 @@ const BlogList = () => {
 
   return (
     <Container>
-      <Section ref={wrapperRef}>
-        <SectionTitle>Blogs</SectionTitle>
-        <BlogsWrapper>
-          {blogsData.user.publication.posts.map((blog) => (
-            <div ref={addToRefs} key={blog._id}>
-              <BlogCard blog={blog} key={blog._id} />
-            </div>
-          ))}
-        </BlogsWrapper>
-        {blogsData?.user.publication.posts.length === 3 && pathname === '/' && (
+      <Section>
+        <motion.div
+          initial={{ opacity: 0, y: 300 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <SectionTitle>Blogs</SectionTitle>
+        </motion.div>
+        <motion.section variants={container} initial='hidden' animate='visible'>
+          <BlogsWrapper>
+            {pathname === '/'
+              ? blogsData.user.publication.posts.slice(0, 3).map((blog) => (
+                  <motion.div key={blog.id} variants={item}>
+                    <BlogCard blog={blog} key={blog._id} />
+                  </motion.div>
+                ))
+              : blogsData?.user?.publication?.posts.map((blog) => (
+                  <motion.div key={blog.id} variants={item}>
+                    <BlogCard blog={blog} key={blog._id} />
+                  </motion.div>
+                ))}
+          </BlogsWrapper>
+        </motion.section>
+
+        {blogsData?.user.publication.posts.length > 3 && pathname === '/' && (
           <TransparentButton to='/blogs'>
             See more <BsChevronDown />
           </TransparentButton>
