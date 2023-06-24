@@ -4,27 +4,36 @@ const projects = [
     title: 'Postline',
     img: '/imgs/projects/postline.webp',
     desc: 'Social Media App where users can interact with each other through posts ',
-    technologies: ['React.js', 'Node.js', 'mongodb', 'Express'],
+    technologies: ['React.js', 'Node.js', 'MongoDB', 'Express'],
     github: 'https://github.com/DineshRout779/postline',
     live: 'https://dns-social.netlify.app/',
   },
+  {
+    id: 2,
+    title: 'CodeTales',
+    img: '/imgs/projects/codetales.webp',
+    desc: 'A blogging Web Application where one can publish and read blogs 📖',
+    technologies: ['React.js', 'Node.js', 'MongoDB', 'Express'],
+    github: 'https://github.com/DineshRout779/codetales',
+    live: 'https://codetales.vercel.app/',
+  },
   // {
-  //   id: 2,
-  //   title: 'Blogbee',
-  //   img: '/imgs/projects/blogbee.webp',
-  //   desc: 'A blogging Web Application where one can publish and read blogs 📖',
+  //   id: 3,
+  //   title: 'Jobify',
+  //   img: '/imgs/projects/jobify.webp',
+  //   desc: 'App that helps companies and candidates create and apply for jobs respectively',
   //   technologies: ['React.js', 'Node.js', 'mongodb', 'Express'],
-  //   github: 'https://github.com/DineshRout779/postline',
-  //   live: 'https://dns-social.netlify.app/',
+  //   github: 'https://github.com/DineshRout779/jobify',
+  //   live: 'https://jobline.netlify.app/',
   // },
   {
-    id: 3,
-    title: 'Jobify',
-    img: '/imgs/projects/jobify.webp',
-    desc: 'App that helps companies and candidates create and apply for jobs respectively',
-    technologies: ['React.js', 'Node.js', 'mongodb', 'Express'],
-    github: 'https://github.com/DineshRout779/jobify',
-    live: 'https://jobline.netlify.app/',
+    id: 11,
+    title: 'Codwiz',
+    img: '/imgs/projects/codwiz.webp',
+    desc: 'An interactive quiz application to test your knowledge of programming languages.',
+    technologies: ['React.js', 'TypeScript', 'MantineUI'],
+    github: 'https://github.com/DineshRout779/codwiz',
+    live: 'https://codwiz.vercel.app/',
   },
   {
     id: 4,
@@ -92,4 +101,51 @@ const projects = [
   },
 ];
 
-export const data = { projects };
+const skills = [
+  {
+    icon: 'html',
+    title: 'HTML',
+  },
+  {
+    icon: 'css',
+    title: 'CSS',
+  },
+  {
+    icon: 'javascript',
+    title: 'JavaScript',
+  },
+  {
+    icon: 'typescript',
+    title: 'TypeScript',
+  },
+  {
+    icon: 'react',
+    title: 'React.js',
+  },
+  {
+    icon: 'redux',
+    title: 'Redux',
+  },
+  {
+    icon: 'tailwindcss',
+    title: 'TailwindCSS',
+  },
+  {
+    icon: 'firebase',
+    title: 'Firebase',
+  },
+  {
+    icon: 'nodejs',
+    title: 'Node.js',
+  },
+  {
+    icon: 'expressjs',
+    title: 'Express.js',
+  },
+  {
+    icon: 'mongodb',
+    title: 'MongoDB',
+  },
+];
+
+export const data = { projects, skills };
