@@ -1,8 +1,6 @@
-import { gsap } from 'gsap';
-import { useRef } from 'react';
-import { useEffect } from 'react';
 import styled from 'styled-components';
 import { Container, SectionTitle } from '../styles/globalStyles';
+import { motion } from 'framer-motion';
 
 const data = [
   {
@@ -59,57 +57,56 @@ const months = [
 ];
 
 const Experience = () => {
-  const wrapperRef = useRef();
-
-  function monthDiff(dateFrom, dateTo) {
+  const monthDiff = (dateFrom, dateTo) => {
     return (
       dateTo.getMonth() -
       dateFrom.getMonth() +
       12 * (dateTo.getFullYear() - dateFrom.getFullYear())
     );
-  }
-
-  useEffect(() => {
-    gsap.fromTo(
-      wrapperRef.current,
-      { y: 200, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.8 }
-    );
-  }, []);
+  };
 
   return (
-    <Container ref={wrapperRef}>
-      <SectionTitle>Work Experience</SectionTitle>
+    <Container>
+      <motion.div
+        initial={{ opacity: 0, y: 300 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <SectionTitle>Work Experience</SectionTitle>
 
-      <TimeLine>
-        {data
-          .sort((a, b) => b.fromDate.getTime() - a.fromDate.getTime())
-          .map((ex) => (
-            <TimeLineItem key={ex.id}>
-              <ExperieceHeader>
-                <h3>
-                  {ex.role}, {ex.company}
-                </h3>
+        <TimeLine>
+          {data
+            .sort((a, b) => b.fromDate.getTime() - a.fromDate.getTime())
+            .map((ex) => (
+              <TimeLineItem key={ex.id}>
+                <ExperieceHeader>
+                  <h3>
+                    {ex.role}, {ex.company}
+                  </h3>
 
-                <small>
-                  {months[ex.fromDate.getMonth()] +
-                    ' ' +
-                    ex.fromDate.getFullYear()}{' '}
-                  -{' '}
-                  {months[ex.toDate.getMonth()] + ' ' + ex.toDate.getFullYear()}{' '}
-                  ({monthDiff(ex.fromDate, ex.toDate)}{' '}
-                  {monthDiff(ex.fromDate, ex.toDate) > 1 ? 'Months' : 'Month'})
-                </small>
-              </ExperieceHeader>
+                  <small>
+                    {months[ex.fromDate.getMonth()] +
+                      ' ' +
+                      ex.fromDate.getFullYear()}{' '}
+                    -{' '}
+                    {months[ex.toDate.getMonth()] +
+                      ' ' +
+                      ex.toDate.getFullYear()}{' '}
+                    ({monthDiff(ex.fromDate, ex.toDate)}{' '}
+                    {monthDiff(ex.fromDate, ex.toDate) > 1 ? 'Months' : 'Month'}
+                    )
+                  </small>
+                </ExperieceHeader>
 
-              <TaskList>
-                {ex.tasks.map((task, i) => (
-                  <li key={i}>{task}</li>
-                ))}
-              </TaskList>
-            </TimeLineItem>
-          ))}
-      </TimeLine>
+                <TaskList>
+                  {ex.tasks.map((task, i) => (
+                    <li key={i}>{task}</li>
+                  ))}
+                </TaskList>
+              </TimeLineItem>
+            ))}
+        </TimeLine>
+      </motion.div>
     </Container>
   );
 };
