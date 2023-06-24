@@ -131,6 +131,10 @@ const skills = [
     title: 'TailwindCSS',
   },
   {
+    icon: 'bootstrap',
+    title: 'Bootstrap',
+  },
+  {
     icon: 'firebase',
     title: 'Firebase',
   },
@@ -145,6 +149,18 @@ const skills = [
   {
     icon: 'mongodb',
     title: 'MongoDB',
+  },
+  {
+    icon: 'sass',
+    title: 'Sass',
+  },
+  {
+    icon: 'git',
+    title: 'Git',
+  },
+  {
+    icon: 'figma',
+    title: 'Figma',
   },
 ];
 
