@@ -97,7 +97,8 @@ const SiteRouterLink = styled(Link)`
 `;
 
 const Attribution = styled.div`
-  margin-top: 2em;
+  margin: 2em 0;
+  margin-top: 0;
   display: flex;
   align-items: center;
   gap: 6px;
