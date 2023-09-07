@@ -10,6 +10,8 @@ import Projects from './pages/Projects';
 import Blogs from './pages/Blogs';
 import Contact from './pages/Contact';
 import { QueryClient, QueryClientProvider } from 'react-query';
+import Resources from './pages/Resources';
+import Feedback from './pages/Feedback';
 
 const queryClient = new QueryClient();
 
@@ -23,6 +25,8 @@ const router = createBrowserRouter([
       { path: 'projects', element: <Projects /> },
       { path: 'blogs', element: <Blogs /> },
       { path: 'contact', element: <Contact /> },
+      { path: 'resources', element: <Resources /> },
+      { path: 'feedback', element: <Feedback /> },
     ],
   },
 ]);
