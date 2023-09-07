@@ -1,5 +1,6 @@
 import BlogList from '../components/BlogList';
 import Experience from '../components/Experience';
+import Freelance from '../components/Freelance';
 import Intro from '../components/Intro';
 import ProjectList from '../components/ProjectList';
 import Skills from '../components/Skills';
@@ -16,6 +17,7 @@ const Home = () => {
       <Skills skills={skills} />
       <ProjectList projects={projects.slice(0, 3)} />
       <BlogList />
+      <Freelance />
       <SpotifyStatus />
     </div>
   );

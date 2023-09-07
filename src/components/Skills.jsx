@@ -48,13 +48,22 @@ const Skills = ({ skills }) => {
 export default Skills;
 
 const SkillsWrapper = styled.div`
-  margin: 2em 0;
+  margin: 2em auto;
+  width: 90%;
   display: grid;
-  grid-gap: 1.5em;
-  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2em;
+  grid-template-columns: repeat(6, 1fr);
   justify-content: center;
 
+  @media (max-width: 1024) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   @media (max-width: 560px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 `;

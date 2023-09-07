@@ -22,4 +22,8 @@ const SkillImage = styled.img`
 const SkillTitle = styled.h3`
   font-weight: 400;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 0.8em;
+  }
 `;
