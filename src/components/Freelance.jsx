@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-
 import styled from 'styled-components';
 import { Container } from '../styles/globalStyles';
 
@@ -21,64 +19,35 @@ const contactIcons = [
   },
 ];
 
-const container = {
-  hidden: { opacity: 0, y: 300 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      delayChildren: 0.5,
-      staggerChildren: 0.2,
-    },
-  },
-  transition: 0.5,
-};
-
-const item = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-  },
-};
-
-const Contact = () => {
+const Freelance = () => {
   return (
     <Container>
-      <Wrapper
-        initial={{ opacity: 0, y: 300 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
+      <Wrapper>
         <TextWrapper>
-          <Heading>Contact</Heading>
-
+          <Heading>Looking for a Freelance Front-End Developer?</Heading>
           <Text>
-            I'm currently looking for frontend internships at startups. Have an
-            opening? Please reach out to me.
+            I'm a Front-End Developer eager to tackle freelance projects. Let's
+            collaborate on something awesome! 🚀
           </Text>
 
-          <IconsWrapper variants={container} initial='hidden' animate='visible'>
+          <IconsWrapper>
             {contactIcons.map((icon, i) => (
-              <IconLink href={icon.linkTo} key={i} variants={item}>
+              <IconLink href={icon.linkTo} key={i}>
                 <img src={icon.url} alt={icon.altText} />
               </IconLink>
             ))}
           </IconsWrapper>
         </TextWrapper>
-        <ImageWrapper>
-          <Image src='./imgs/contact.svg' alt='' />
-        </ImageWrapper>
+        <Image src='./imgs/freelance.svg' alt='' />
       </Wrapper>
     </Container>
   );
 };
-export default Contact;
 
-const Wrapper = styled(motion.div)`
-  min-height: 70vh;
+const Wrapper = styled.div`
+  min-height: 50vh;
   display: flex;
   justify-content: space-between;
-  gap: 4em;
   padding: 2em 0;
 
   @media (max-width: 768px) {
@@ -89,7 +58,7 @@ const Wrapper = styled(motion.div)`
 
 const TextWrapper = styled.div`
   padding: 2em 0;
-  flex: 0.5;
+
   img {
     display: block;
     width: 48px;
@@ -97,7 +66,7 @@ const TextWrapper = styled.div`
   }
 `;
 
-const IconsWrapper = styled(motion.div)`
+const IconsWrapper = styled.div`
   display: flex;
   gap: 1em;
   margin: 1em 0;
@@ -110,7 +79,7 @@ const IconsWrapper = styled(motion.div)`
   }
 `;
 
-const IconLink = styled(motion.a)`
+const IconLink = styled.a`
   transition: all 0.3s ease;
 
   &:hover {
@@ -131,13 +100,10 @@ const Text = styled.p`
   }
 `;
 
-const ImageWrapper = styled.div`
-  flex: 0.5;
-`;
-
 const Image = styled.img`
   width: 100%;
-  display: block;
-  max-width: 480px;
+  max-width: 240px;
   margin: 0 auto;
 `;
+
+export default Freelance;

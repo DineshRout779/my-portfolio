@@ -35,6 +35,12 @@ const Footer = () => {
             <SiteRouterLink to='/blogs'>Blogs</SiteRouterLink>
             <SiteRouterLink to='/contact'>Contact</SiteRouterLink>
           </Col>
+          {/* col 3 */}
+          <Col>
+            <ColTitle>Other</ColTitle>
+            <SiteRouterLink to='/resources'>Resources</SiteRouterLink>
+            <SiteRouterLink to='/feedback'>Feedback</SiteRouterLink>
+          </Col>
         </Row>
       </FooterWrapper>
       <Attribution>

@@ -17,17 +17,8 @@ const projects = [
     github: 'https://github.com/DineshRout779/codetales',
     live: 'https://codetales.vercel.app/',
   },
-  // {
-  //   id: 3,
-  //   title: 'Jobify',
-  //   img: '/imgs/projects/jobify.webp',
-  //   desc: 'App that helps companies and candidates create and apply for jobs respectively',
-  //   technologies: ['React.js', 'Node.js', 'mongodb', 'Express'],
-  //   github: 'https://github.com/DineshRout779/jobify',
-  //   live: 'https://jobline.netlify.app/',
-  // },
   {
-    id: 11,
+    id: 3,
     title: 'Codwiz',
     img: '/imgs/projects/codwiz.webp',
     desc: 'An interactive quiz application to test your knowledge of programming languages.',
@@ -46,7 +37,7 @@ const projects = [
   },
 
   {
-    id: 6,
+    id: 5,
     title: 'Notes App',
     img: '/imgs/projects/notes.webp',
     desc: 'A notes app where one can add quick notes on the go. Data is saved locally.',
@@ -55,7 +46,7 @@ const projects = [
     live: 'https://react-notes-app-rust.vercel.app/',
   },
   {
-    id: 7,
+    id: 6,
     title: 'Weather App',
     img: '/imgs/projects/weather.webp',
     desc: 'A weather app that tells weather details based on search query (city, state, etc)',
@@ -64,7 +55,7 @@ const projects = [
     live: 'https://react-weather-app-fawn.vercel.app/',
   },
   {
-    id: 8,
+    id: 7,
     title: 'Triangle Quiz',
     img: '/imgs/projects/triangle.webp',
     desc: 'How much  do  you know  about triangles 🔺? Test your skills.',
@@ -73,7 +64,7 @@ const projects = [
     live: 'https://serene-euclid-2b069d.netlify.app/',
   },
   {
-    id: 9,
+    id: 8,
     title: 'URL Shortener',
     img: '/imgs/projects/url.webp',
     desc: 'An app that helps to shorten URL with ease.',
@@ -82,16 +73,25 @@ const projects = [
     live: 'https://url-shortening-seven.vercel.app/',
   },
   {
+    id: 9,
+    title: 'Landing Pages',
+    img: '/imgs/projects/landing-pages.webp',
+    desc: 'Collection of all landing pages using HTML & CSS',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    github: 'https://github.com/DineshRout779/old-frontend-projects',
+    live: 'https://brilliant-snickerdoodle-694771.netlify.app/',
+  },
+  {
     id: 10,
     title: 'Mini JS Projects',
     img: '/imgs/projects/mini-js.webp',
-    desc: 'Collection of all mini JavaScript projects',
+    desc: 'Collection of mini Projects made using JavaScript',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/DineshRout779/Javascript-Projects',
     live: 'https://dineshrout779.github.io/Javascript-Projects/',
   },
   {
-    id: 5,
+    id: 11,
     title: 'Zigbee',
     img: '/imgs/projects/zigbee.webp',
     desc: 'A website for student developers club, MCA, OUTR.',
@@ -161,6 +161,18 @@ const skills = [
   {
     icon: 'figma',
     title: 'Figma',
+  },
+  {
+    icon: 'github',
+    title: 'Github',
+  },
+  {
+    icon: 'babel',
+    title: 'Babel',
+  },
+  {
+    icon: 'webpack',
+    title: 'Webpack',
   },
 ];
 

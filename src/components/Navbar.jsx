@@ -8,6 +8,7 @@ import { NavLink } from 'react-router-dom';
 import { useRef, useState } from 'react';
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
+import ScrollIndicator from './ScrollIndicator';
 
 const Navbar = () => {
   const { state, dispatch } = useApp();
@@ -39,17 +40,21 @@ const Navbar = () => {
   });
 
   useEffect(() => {
-    document.addEventListener('scroll', () => {
+    function scrollChecker() {
       if (window.scrollY > 100) {
         setBgBlur(true);
       } else {
         setBgBlur(false);
       }
-    });
+    }
+    document.addEventListener('scroll', scrollChecker);
+
+    return () => window.removeEventListener('scroll', scrollChecker);
   }, []);
 
   return (
     <Header mobile={mobileMenuOpen} bgBlur={bgBlur} theme={theme}>
+      <ScrollIndicator />
       <Container>
         <Nav>
           <HamburgerMenu onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>

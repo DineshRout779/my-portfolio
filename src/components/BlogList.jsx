@@ -90,12 +90,12 @@ const BlogList = () => {
           <BlogsWrapper>
             {pathname === '/'
               ? blogsData.user.publication.posts.slice(0, 3).map((blog) => (
-                  <motion.div key={blog.id} variants={item}>
+                  <motion.div key={blog._id} variants={item}>
                     <BlogCard blog={blog} key={blog._id} />
                   </motion.div>
                 ))
               : blogsData?.user?.publication?.posts.map((blog) => (
-                  <motion.div key={blog.id} variants={item}>
+                  <motion.div key={blog._id} variants={item}>
                     <BlogCard blog={blog} key={blog._id} />
                   </motion.div>
                 ))}
