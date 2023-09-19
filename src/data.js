@@ -1,6 +1,8 @@
+import { nanoid } from 'nanoid';
+
 const projects = [
   {
-    id: 1,
+    id: nanoid(),
     title: 'Postline',
     img: '/imgs/projects/postline.webp',
     desc: 'Social Media App where users can interact with each other through posts ',
@@ -9,7 +11,7 @@ const projects = [
     live: 'https://dns-social.netlify.app/',
   },
   {
-    id: 2,
+    id: nanoid(),
     title: 'CodeTales',
     img: '/imgs/projects/codetales.webp',
     desc: 'A blogging Web Application where one can publish and read blogs 📖',
@@ -18,7 +20,16 @@ const projects = [
     live: 'https://codetales.vercel.app/',
   },
   {
-    id: 3,
+    id: nanoid(),
+    title: 'FoodHunt',
+    img: '/imgs/projects/foodhunt.webp',
+    desc: "A food delivery App built using Reactjs and Powered by Swiggy's API",
+    technologies: ['React.js', 'TailwindCSS', 'Redux'],
+    github: 'https://github.com/DineshRout779/foodhunt',
+    live: 'https://foody-two.vercel.app/',
+  },
+  {
+    id: nanoid(),
     title: 'Codwiz',
     img: '/imgs/projects/codwiz.webp',
     desc: 'An interactive quiz application to test your knowledge of programming languages.',
@@ -27,7 +38,7 @@ const projects = [
     live: 'https://codwiz.vercel.app/',
   },
   {
-    id: 4,
+    id: nanoid(),
     title: 'Notice Generator',
     img: 'https://shrtco.de/1eXuKm',
     desc: 'App that helps placement coordinators generate placement notice',
@@ -37,7 +48,7 @@ const projects = [
   },
 
   {
-    id: 5,
+    id: nanoid(),
     title: 'Notes App',
     img: '/imgs/projects/notes.webp',
     desc: 'A notes app where one can add quick notes on the go. Data is saved locally.',
@@ -46,7 +57,7 @@ const projects = [
     live: 'https://react-notes-app-rust.vercel.app/',
   },
   {
-    id: 6,
+    id: nanoid(),
     title: 'Weather App',
     img: '/imgs/projects/weather.webp',
     desc: 'A weather app that tells weather details based on search query (city, state, etc)',
@@ -55,7 +66,7 @@ const projects = [
     live: 'https://react-weather-app-fawn.vercel.app/',
   },
   {
-    id: 7,
+    id: nanoid(),
     title: 'Triangle Quiz',
     img: '/imgs/projects/triangle.webp',
     desc: 'How much  do  you know  about triangles 🔺? Test your skills.',
@@ -64,7 +75,7 @@ const projects = [
     live: 'https://serene-euclid-2b069d.netlify.app/',
   },
   {
-    id: 8,
+    id: nanoid(),
     title: 'URL Shortener',
     img: '/imgs/projects/url.webp',
     desc: 'An app that helps to shorten URL with ease.',
@@ -73,7 +84,7 @@ const projects = [
     live: 'https://url-shortening-seven.vercel.app/',
   },
   {
-    id: 9,
+    id: nanoid(),
     title: 'Landing Pages',
     img: '/imgs/projects/landing-pages.webp',
     desc: 'Collection of all landing pages using HTML & CSS',
@@ -82,7 +93,7 @@ const projects = [
     live: 'https://brilliant-snickerdoodle-694771.netlify.app/',
   },
   {
-    id: 10,
+    id: nanoid(),
     title: 'Mini JS Projects',
     img: '/imgs/projects/mini-js.webp',
     desc: 'Collection of mini Projects made using JavaScript',
@@ -91,11 +102,11 @@ const projects = [
     live: 'https://dineshrout779.github.io/Javascript-Projects/',
   },
   {
-    id: 11,
+    id: nanoid(),
     title: 'Zigbee',
     img: '/imgs/projects/zigbee.webp',
     desc: 'A website for student developers club, MCA, OUTR.',
-    technologies: ['Next.js', 'TypeScript', 'ChakraUI'],
+    technologies: ['nextjs', 'typescript', 'ChakraUI'],
     github: null,
     live: 'https://zigbeeoutr.in/',
   },
