@@ -110,11 +110,11 @@ const BlogList = () => {
           </BlogsWrapper>
         </motion.section>
 
-        {/* {blogsData?.user.publication.posts.length > 3 && pathname === '/' && (
+        {blogsData?.posts?.edges.length > 3 && pathname === '/' && (
           <TransparentButton to='/blogs'>
             See more <BsChevronDown />
           </TransparentButton>
-        )} */}
+        )}
       </Section>
     </Container>
   );
