@@ -1,14 +1,12 @@
 import styled from 'styled-components';
 
 const BlogCard = ({ blog }) => {
+  console.log(blog);
   return (
-    <BlogItem
-      href={`https://coderdinesh.hashnode.dev/${blog.slug}`}
-      target='_blank'
-    >
-      <img src={blog.coverImage} alt={blog.title} loading='lazy' />
+    <BlogItem href={blog.url} target='_blank'>
+      <img src={blog?.coverImage?.url} alt={blog.title} loading='lazy' />
       <BlogInfo>
-        <small>{new Date(blog.dateAdded).toDateString()}</small>
+        <small>{new Date(blog.publishedAt).toDateString()}</small>
         <BlogTitle>{blog.title}</BlogTitle>
         <p>{blog.brief.slice(0, 120) + '...'}</p>
       </BlogInfo>
