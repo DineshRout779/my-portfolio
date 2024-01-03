@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const BlogCard = ({ blog }) => {
-  console.log(blog);
+  // console.log(blog);
   return (
     <BlogItem href={blog.url} target='_blank'>
       <img src={blog?.coverImage?.url} alt={blog.title} loading='lazy' />

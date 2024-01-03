@@ -70,7 +70,7 @@ const BlogList = () => {
         query: ARTICLE_QUERY,
       },
     }).then((response) => {
-      console.log(response.data.data.publication);
+      // console.log(response.data.data.publication);
       return response.data.data.publication;
     });
   });
