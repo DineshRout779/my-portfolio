@@ -11,9 +11,9 @@ const data = [
     toDate: new Date('2022-07-04'),
     tasks: [
       'Built an QnA forum application',
-      'Updated interfaces, fixed bugs',
-      'Implemented new features',
-      'Collaborated with backend devs to integrate the frontend with APIs',
+      'Worked extensively on React.js and TailwindCSS',
+      'Built User Interfaces, fixed bugs, and integrated APIs',
+      'Collaborated with backend and UI Developers',
     ],
   },
   {
@@ -23,9 +23,9 @@ const data = [
     fromDate: new Date('2022-08-24'),
     toDate: new Date('2022-10-24'),
     tasks: [
-      'Worked on an annotation tool',
-      'Implemented features in both frontend and backend',
-      'Fixed bugs in the frontend application',
+      'Managed an Annotation Tool that visualizes annotators’ behavior based on word complexity',
+      'Technologies worked on: React, Node.js, Express, and MongoDB',
+      'Optimized the code, fixed bugs, built and integrated APIs.',
     ],
   },
   {
@@ -35,8 +35,8 @@ const data = [
     fromDate: new Date('2022-11-07'),
     toDate: new Date('2023-05-07'),
     tasks: [
-      'Built more than 50+ client projects from landing pages to full-stack web applications',
-      'Worked on both the frontend and backend technologies',
+      'Built more than 30+ client projects from landing pages to full-stack web applications',
+      'Worked on Reactjs, Node.js, Express, MongoDB, Tailwindcss, and Graphql',
     ],
   },
 ];
