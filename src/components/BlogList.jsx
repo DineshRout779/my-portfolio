@@ -21,6 +21,7 @@ const ARTICLE_QUERY = `
       posts(first: 20) {
         edges {
           node {
+            id
             title
             brief
             slug
