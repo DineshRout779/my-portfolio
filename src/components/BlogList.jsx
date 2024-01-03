@@ -21,6 +21,7 @@ const ARTICLE_QUERY = `
       posts(first: 20) {
         edges {
           node {
+            id
             title
             brief
             slug
@@ -69,7 +70,7 @@ const BlogList = () => {
         query: ARTICLE_QUERY,
       },
     }).then((response) => {
-      console.log(response.data.data.publication);
+      // console.log(response.data.data.publication);
       return response.data.data.publication;
     });
   });

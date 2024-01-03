@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { Container, HighlightedLink } from '../styles/globalStyles';
 import me from '../assets/me.jpg';
-import resume from '../assets/DineshRout_resume.pdf';
+import resume from '../assets/Dinesh_Resume.pdf';
 import { FiDownload } from 'react-icons/fi';
 import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
 
