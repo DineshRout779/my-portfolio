@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import { BsSpotify } from 'react-icons/bs';
 import styled from 'styled-components';
 import { Container } from '../styles/globalStyles';
+import Equilizer from './Equilizer';
+import { FaPlay } from 'react-icons/fa';
 
 const API_URL = process.env.REACT_APP_API;
 
@@ -49,19 +51,26 @@ const SpotifyStatus = () => {
     <Container>
       <SpotifyWrapper>
         <SpotifyHeader>
-          <BsSpotify color='#1DB954' />{' '}
-          <small style={{ textTransform: 'uppercase' }}>
-            Listening to spotify
-          </small>
+          <SpotifyHeaderLeft>
+            <Equilizer />
+            <small style={{ textTransform: 'uppercase' }}>
+              Listening to spotify
+            </small>
+            {/* <BsSpotify color='#1DB954' /> */}
+          </SpotifyHeaderLeft>
         </SpotifyHeader>
 
-        <SongInfo>
+        <SongInfo href={song.songUrl} target='_blank' rel='noreferrer'>
           <img src={song.albumImageUrl} alt={song.title} />
           <div>
             <h3>{song.title}</h3>
             <p>by {song.artist}</p>
           </div>
         </SongInfo>
+
+        {/* <SpotifyPlayButton href={song.songUrl} target='_blank' rel='noreferrer'>
+          Play in <BsSpotify color='#1DB954' />
+        </SpotifyPlayButton> */}
       </SpotifyWrapper>
     </Container>
   );
@@ -74,13 +83,37 @@ const SpotifyWrapper = styled.div`
 
 const SpotifyHeader = styled.div`
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 8px;
 `;
 
+const SpotifyHeaderLeft = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+`;
+
+// const SpotifyPlayButton = styled.a`
+//   background-color: var(--bg-color);
+//   color: #1dd05d;
+//   font-size: 10px;
+//   padding: 4px 24px;
+//   border-radius: 4px;
+//   text-decoration: none;
+//   text-transform: uppercase;
+//   letter-spacing: 2px;
+//   text-align: center;
+//   font-weight: 600;
+//   display: flex;
+//   align-items: center;
+//   gap: 4px;
+// `;
+
 const SongInfo = styled.a`
   display: flex;
   margin: 1em 0;
+  text-decoration: none;
 
   img {
     width: 60px;
