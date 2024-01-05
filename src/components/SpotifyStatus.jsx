@@ -4,7 +4,6 @@ import { BsSpotify } from 'react-icons/bs';
 import styled from 'styled-components';
 import { Container } from '../styles/globalStyles';
 import Equilizer from './Equilizer';
-import { FaPlay } from 'react-icons/fa';
 
 const API_URL = process.env.REACT_APP_API;
 
