@@ -4,7 +4,7 @@ import { BsSpotify } from 'react-icons/bs';
 import styled from 'styled-components';
 import { Container } from '../styles/globalStyles';
 import Equilizer from './Equilizer';
-import { FaPlay } from 'react-icons/fa';
+// import { FaPlay } from 'react-icons/fa';
 
 const API_URL = process.env.REACT_APP_API;
 
@@ -16,7 +16,7 @@ const SpotifyStatus = () => {
     const getCurrentTrack = async () => {
       try {
         setIsLoading(true);
-        const { data } = await axios.get(`${API_URL}/getCurrentTrack`);
+        const { data } = await axios.get(API_URL);
 
         const { isPlaying, ...songData } = data;
 
