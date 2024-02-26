@@ -23,7 +23,7 @@ const Intro = () => {
               Passionate about Technoloy and Startups | Life long learner
             </Bio>
             <HighlightedLink href={resume} target='_blank'>
-              Donwload Resume <FiDownload />
+              Download Resume <FiDownload />
             </HighlightedLink>
             <IconsWrapper>
               <Icon href='https://github.com/DineshRout779' target='_blank'>
