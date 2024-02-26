@@ -15,7 +15,7 @@ const SpotifyStatus = () => {
     const getCurrentTrack = async () => {
       try {
         setIsLoading(true);
-        const { data } = await axios.get(`${API_URL}/getCurrentTrack`);
+        const { data } = await axios.get(API_URL);
 
         const { isPlaying, ...songData } = data;
 
