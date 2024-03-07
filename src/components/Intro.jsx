@@ -20,7 +20,7 @@ const Intro = () => {
             <Heading>Dinesh Rout</Heading>
             <Title>Frontend Developer</Title>
             <Bio>
-              Passionate about Technoloy and Startups | Life long learner
+              Passionate about Technology and Startups | Life long learner
             </Bio>
             <HighlightedLink href={resume} target='_blank'>
               Download Resume <FiDownload />
