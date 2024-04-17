@@ -42,6 +42,15 @@ const ProjectList = ({ projects }) => {
         <SectionTitle>Projects</SectionTitle>
       </motion.div>
       <motion.section variants={container} initial='hidden' animate='visible'>
+        {/* {pathname !== '/' && (
+          <ProjectCategories>
+            <ProjectCategory>Featured</ProjectCategory>
+            <ProjectCategory>Full-Stack</ProjectCategory>
+            <ProjectCategory>Frontend</ProjectCategory>
+            <ProjectCategory>Archieves</ProjectCategory>
+          </ProjectCategories>
+        )} */}
+
         <ProjectsWrapper>
           {projects.map((project) => (
             <motion.div key={project.id} variants={item}>
@@ -76,3 +85,21 @@ const ProjectsWrapper = styled.div`
     grid-template-columns: repeat(1, 1fr);
   }
 `;
+
+// const ProjectCategories = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// `;
+
+// const ProjectCategory = styled.div`
+//   background: #333;
+//   color: #fff;
+//   padding: 0.4em 1em;
+//   cursor: pointer;
+//   margin: 0 0.2em;
+//   border-radius: 4px;
+//   font-size: 14px;
+//   color: ${({ primary }) => (primary ? '#fff' : 'var(--accent-blue)')};
+//   background: ${({ primary }) => (!primary ? 'none' : 'var(--accent-blue)')};
+// `;

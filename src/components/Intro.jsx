@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { Container, HighlightedLink } from '../styles/globalStyles';
 import me from '../assets/me.jpg';
-import resume from '../assets/Dinesh_Resume.pdf';
 import { FiDownload } from 'react-icons/fi';
 import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs';
 
@@ -22,7 +21,10 @@ const Intro = () => {
             <Bio>
               Passionate about Technoloy and Startups | Life long learner
             </Bio>
-            <HighlightedLink href={resume} target='_blank'>
+            <HighlightedLink
+              href='https://drive.google.com/file/d/1u5QXX1si2zoR-ikLKhR5aPY6YDGv_psd/view?usp=drive_link'
+              target='_blank'
+            >
               Download Resume <FiDownload />
             </HighlightedLink>
             <IconsWrapper>
