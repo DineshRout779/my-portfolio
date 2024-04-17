@@ -37,16 +37,15 @@ const projects = [
     github: 'https://github.com/DineshRout779/codwiz',
     live: 'https://codwiz.vercel.app/',
   },
-  {
-    id: nanoid(),
-    title: 'Notice Generator',
-    img: 'https://shrtco.de/1eXuKm',
-    desc: 'App that helps placement coordinators generate placement notice',
-    technologies: ['React.js', 'TypeScript', 'MantineUI'],
-    github: 'https://github.com/AshutoshDash1999/placement-notice-generator',
-    live: 'https://placement-notice-generator.vercel.app/',
-  },
-
+  // {
+  //   id: nanoid(),
+  //   title: 'Notice Generator',
+  //   img: 'https://shrtco.de/1eXuKm',
+  //   desc: 'App that helps placement coordinators generate placement notice',
+  //   technologies: ['React.js', 'TypeScript', 'MantineUI'],
+  //   github: 'https://github.com/AshutoshDash1999/placement-notice-generator',
+  //   live: 'https://placement-notice-generator.vercel.app/',
+  // },
   {
     id: nanoid(),
     title: 'Notes App',

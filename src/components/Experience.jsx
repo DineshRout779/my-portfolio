@@ -35,8 +35,20 @@ const data = [
     fromDate: new Date('2022-11-07'),
     toDate: new Date('2023-05-07'),
     tasks: [
-      'Built more than 30+ client projects from landing pages to full-stack web applications',
-      'Worked on Reactjs, Node.js, Express, MongoDB, Tailwindcss, and Graphql',
+      'Built more than 20+ client projects from landing pages to full-stack web applications',
+      'Worked on Reactjs, Node.js, Express, MongoDB, TailwindCSS, and Graphql',
+    ],
+  },
+  {
+    id: 4,
+    company: 'Iserveu Technologies',
+    role: 'Software Developer Intern',
+    fromDate: new Date('2024-01-29'),
+    toDate: new Date(),
+    tasks: [
+      'Built APIs for transaction reports',
+      'Worked on Node.js and BigQuery',
+      'Learning Angular.js',
     ],
   },
 ];
@@ -89,9 +101,15 @@ const Experience = () => {
                       ' ' +
                       ex.fromDate.getFullYear()}{' '}
                     -{' '}
-                    {months[ex.toDate.getMonth()] +
-                      ' ' +
-                      ex.toDate.getFullYear()}{' '}
+                    {ex.toDate.toDateString() === new Date().toDateString() ? (
+                      'Present '
+                    ) : (
+                      <span>
+                        {months[ex.toDate.getMonth()] +
+                          ' ' +
+                          ex.toDate.getFullYear()}{' '}
+                      </span>
+                    )}
                     ({monthDiff(ex.fromDate, ex.toDate)}{' '}
                     {monthDiff(ex.fromDate, ex.toDate) > 1 ? 'Months' : 'Month'}
                     )
