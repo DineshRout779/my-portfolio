@@ -30,25 +30,14 @@ const data = [
   },
   {
     id: 3,
-    company: 'CollegeToppr',
-    role: 'Software Developer Intern',
-    fromDate: new Date('2022-11-07'),
-    toDate: new Date('2023-05-07'),
-    tasks: [
-      'Built more than 20+ client projects from landing pages to full-stack web applications',
-      'Worked on Reactjs, Node.js, Express, MongoDB, TailwindCSS, and Graphql',
-    ],
-  },
-  {
-    id: 4,
     company: 'Iserveu Technologies',
-    role: 'Software Developer Intern',
+    role: 'Software Developer',
     fromDate: new Date('2024-01-29'),
     toDate: new Date(),
     tasks: [
-      'Built APIs for transaction reports',
-      'Worked on Node.js and BigQuery',
-      'Learning Angular.js',
+      'Implemented APIs for ',
+      'Worked on Node.js, PostgreSQL and BigQuery',
+      '',
     ],
   },
 ];
