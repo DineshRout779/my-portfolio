@@ -35,9 +35,9 @@ const data = [
     fromDate: new Date('2024-01-29'),
     toDate: new Date(),
     tasks: [
-      'Implemented APIs for ',
+      'Implemented APIs for UPI Payment Soundbox for various banks.',
       'Worked on Node.js, PostgreSQL and BigQuery',
-      '',
+      'Optimized code for handling large records processing',
     ],
   },
 ];
